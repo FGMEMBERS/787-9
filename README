@@ -1,0 +1,9 @@
+This is the new 'official' home of the 787-8 for Flightgear.
+
+After gitorious closed down and former maintainer Omega95 retired, islandmonkey created this Github repo. We'll try to gather open merge requests and improvements from the old gitorious repo here.
+
+Install
+-------
+Rename Aircraft folder to '787-8'
+
+WIKI ARTICLE : http://wiki.flightgear.org/Boeing_787-8_Dreamliner

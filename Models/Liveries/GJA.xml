@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <sim>
+    <model>
+      <livery>
+	<name type="string">GoldenJet</name>
+	<texture>Liveries/GJA.png</texture>
+      </livery>
+      <lights>
+	<texture>Liveries/GJA-Lights.png</texture>
+      </lights>
+    </model>
+  </sim>
+</PropertyList>
