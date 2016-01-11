@@ -76547,7 +76547,7 @@ loc -20.8869991 6.2057400 0.0110807
 kids 3
 OBJECT poly
 name "NGear"
-loc 0.1523170 -8.1572304 0.0000019
+loc -3.3316536 -8.1572304 0.0000019
 crease 30.0
 texture "landing-gears.png"
 texrep 1 1
@@ -90005,7 +90005,7 @@ refs 3
 kids 0
 OBJECT poly
 name "NGearStrut"
-loc 0.1523190 -8.3273602 0.0000019
+loc -3.3316517 -8.3273602 0.0000019
 crease 30.0
 texture "landing-gears.png"
 texrep 1 1
@@ -92866,7 +92866,7 @@ refs 3
 kids 0
 OBJECT poly
 name "NoseWheel"
-loc -0.3046379 16.4846001 -0.0000039
+loc -3.7886086 16.4846001 -0.0000039
 crease 30.0
 texture "landing-gears.png"
 texrep 1 1
