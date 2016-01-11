@@ -40662,7 +40662,7 @@ refs 3
 kids 0
 OBJECT poly
 name "LeftGearCompressor2"
-loc -2.5753100 -0.4784719 8.1937304
+loc -1.9226363 -0.4784719 8.1937304
 crease 30.0
 texture "landing-gears.png"
 texrep 1 1
@@ -65097,6 +65097,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhfnosedoor"
+loc -2.2482448 0.0000000 0.0000000
 crease 30.0
 texture "BOE.png"
 texrep 1 1
@@ -65660,6 +65661,7 @@ refs 4
 kids 0
 OBJECT poly
 name "lhnosedoor"
+loc -3.5790777 0.0000000 0.0000000
 crease 30.0
 texture "BOE.png"
 texrep 1 1
@@ -76547,7 +76549,7 @@ loc -20.8869991 6.2057400 0.0110807
 kids 3
 OBJECT poly
 name "NGear"
-loc -3.3316536 -8.1572304 0.0000019
+loc -2.6789799 -8.1572304 0.0000019
 crease 30.0
 texture "landing-gears.png"
 texrep 1 1
@@ -90005,7 +90007,7 @@ refs 3
 kids 0
 OBJECT poly
 name "NGearStrut"
-loc -3.3316517 -8.3273602 0.0000019
+loc -2.6789780 -8.3273602 0.0000019
 crease 30.0
 texture "landing-gears.png"
 texrep 1 1
@@ -92866,7 +92868,7 @@ refs 3
 kids 0
 OBJECT poly
 name "NoseWheel"
-loc -3.7886086 16.4846001 -0.0000039
+loc -3.1359348 16.4846001 -0.0000039
 crease 30.0
 texture "landing-gears.png"
 texrep 1 1
@@ -100381,6 +100383,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhfnosedoor"
+loc -2.2482448 0.0000000 0.0000000
 crease 30.0
 texture "BOE.png"
 texrep 1 1
@@ -100996,6 +100999,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhnosedoor"
+loc -3.5790777 0.0000000 0.0000000
 crease 30.0
 texture "BOE.png"
 texrep 1 1

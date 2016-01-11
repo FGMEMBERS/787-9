@@ -113,6 +113,20 @@
             livery_update.stop();
         </unload>
     </nasal>
+<!-- hide nose gear in internal view -->
+<animation>
+  <type>select</type>
+  <object-name>NGear</object-name>
+  <object-name>NGearStrut</object-name>
+  <object-name>NoseWheel</object-name>
+  <condition>
+   <not>
+      <property>sim/current-view/internal</property>
+   </not>
+  </condition>
+</animation>
+
+
 
 <animation>
         <type>material</type>
