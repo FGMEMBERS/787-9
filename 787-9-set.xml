@@ -1145,14 +1145,14 @@
         </dialogs>
 <!-- Animations Creators -->
 		<helpers>
-<!--			<file>Aircraft/787-8/Devel/wxradar-echo-animations.nas</file>
-			<file>Aircraft/787-8/Devel/wxradar-pixel-animations.nas</file>
-			<file>Aircraft/787-8/Devel/tcas-animations-helper.nas</file> -->
+<!--			<file>Aircraft/787-9/Devel/wxradar-echo-animations.nas</file>
+			<file>Aircraft/787-9/Devel/wxradar-pixel-animations.nas</file>
+			<file>Aircraft/787-9/Devel/tcas-animations-helper.nas</file> -->
 			<!-- file>Aircraft/Instruments-3d/vsd/animation_creator.nas</file -->
-			<!-- file>Aircraft/787-8/parse_dat.nas</file -->
+			<!-- file>Aircraft/787-9/parse_dat.nas</file -->
 		</helpers>
 		<vsd>
-			<!-- file>Aircraft/787-8/Nasal/vsd.nas</file -->
+			<!-- file>Aircraft/787-9/Nasal/vsd.nas</file -->
 		</vsd>
 		<!--game in EFB; airline-specific modules go here, I guess?-->
 		<tps>
