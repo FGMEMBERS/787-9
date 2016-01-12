@@ -6,7 +6,7 @@
 		<description>Boeing 787-900</description>
 		<flight-model>jsb</flight-model>
 		<aero>787-9</aero>
-		<authors>See Authors.txt</authors>
+		<authors>Authors.txt</authors>
 		<engine>trent_1000</engine>
 
 		<model>
@@ -651,8 +651,8 @@
 	<weight n="0">
 		<name>Crew</name>
 		<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]">350</weight-lb>
-		<max-lb>350</max-lb>
-		<min-lb>100</min-lb>
+		<max-lb>500</max-lb>
+		<min-lb>350</min-lb>
 	</weight>
 
 	<weight n="1">
@@ -671,8 +671,8 @@
 
 	<weight n="3">
 		<name>Economy Class</name>
-		<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[3]">25000</weight-lb>
-		<max-lb>35000</max-lb>
+		<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[3]">26000</weight-lb>
+		<max-lb>36000</max-lb>
 		<min-lb>0</min-lb>
 	</weight>
 

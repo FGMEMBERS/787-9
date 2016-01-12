@@ -1,6 +1,6 @@
 ## PRINT STARTUP MESSAGES
 #########################
-screen.log.write("Welcome Aboard the Boeing 787-8 Aircraft!", 1, 1, 1);
+screen.log.write("Welcome Aboard the Boeing 787-9 Aircraft!", 1, 1, 1);
 setprop("/instrumentation/sysinfo/max", 0);
 setprop("/instrumentation/sysinfo/first", 0);
 b787.sysinfo.log_msg("[SYS] Testing EICAS Warning Display", 2);
@@ -8,7 +8,7 @@ b787.sysinfo.log_msg("[SYS] Systems Check and Logger Initialized", 0);
 
 ## LIVERY SELECT
 ################
-aircraft.livery.init("Aircraft/787-8/Models/Liveries");
+aircraft.livery.init("Aircraft/787-9/Models/Liveries");
 
 ## LIGHTS
 #########

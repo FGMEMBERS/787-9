@@ -5,10 +5,10 @@
    xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 <fileheader>
-  <author> Narendran Muraleedharan, Dwayne Gable and Nicky Ivy</author>
-  <filecreationdate> 2011-12-29 </filecreationdate>
-  <version>$Revision: 1.10 $</version>
-  <description> Flight Dynamics Model for the Boeing 787-8 </description>
+  <author> Narendran Muraleedharan, Dwayne Gable and Nicky Ivy, Jonathan Redpath</author>
+  <filecreationdate> 2015-01-12 </filecreationdate>
+  <version>$Revision: 1.0 $</version>
+  <description> Flight Dynamics Model for the Boeing 787-9 </description>
 </fileheader>
 
 <!-- UNIT CONVERSIONS :
@@ -19,7 +19,7 @@
 
 <metrics>
    <wingarea  unit="FT2"> 3501.7984 </wingarea> <!-- Wikipedia -->
-   <wingspan  unit="FT" >  192 </wingspan> <!-- Wikipedia -->
+   <wingspan  unit="FT" >  197.3 </wingspan> <!-- Wikipedia -->
    <wing_incidence unit="DEG"> 2 </wing_incidence> <!-- From old 787 FDM -->
    <chord     unit="FT" >   38.94 </chord> <!-- Measured -->
    <htailarea unit="FT2">  343.36 </htailarea> <!-- Calculated on paper -->
@@ -52,7 +52,7 @@
 	<ixy unit="SLUG*FT2"> 0.015488805 </ixy> <!-- Values from YASIM Solver (old 787 FDM) -->
 	<ixz unit="SLUG*FT2"> 0.015488805 </ixz> <!-- Values from YASIM Solver (old 787 FDM) -->
 	<iyz unit="SLUG*FT2">         0 </iyz>
-   <emptywt unit="LBS" > 239200 </emptywt> <!-- Supposed to be 242000 but the plane acts too heavy with that setting -->
+   <emptywt unit="LBS" > 277000 </emptywt> <!-- Supposed to be 242000 but the plane acts too heavy with that setting -->
    <location name="CG" unit="IN"> <!-- Values from YASIM Solver (old 787 FDM) -->
      <x> -16 </x>
      <y>   0.00 </y>
@@ -63,7 +63,7 @@
 	cockpit.-->
 
 	<pointmass name="Crew">
-		<weight unit="LBS">350</weight>
+		<weight unit="LBS">340</weight>
 		<location name="POINTMASS" unit="IN">
 			<x>-898.32</x>
 			<y>0</y>
@@ -94,10 +94,10 @@
 		</location>
 	</pointmass>
 
-	<!--Economy class. 170 seats. Min 0 Max 30600 Default 25000-->
+	<!--Economy class. 200 seats. Min 0 Max 36000 Default 26000-->
 
 	<pointmass name="economy-class">
-		<weight unit="LBS">25000</weight>
+		<weight unit="LBS">27000</weight>
 		<location name="POINTMASS" unit="IN">
 			<x>157.6</x>
 			<y>0</y>

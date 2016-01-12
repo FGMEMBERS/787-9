@@ -14,5 +14,6 @@
 > Thorsten : WXRadar Storm Scripts
 > Oliver T : Ground Service Vehicles Models, De-icing Animations
 > Joshua W : Model, (original 787-8 developer - during FG v1.0)
-
+> Jonathan Redpath : 787-9 conversion; 3D work
+> Aiden ? (MSA-S23) : Assistance in 787-9 Project
 # Systems include dialogs, autopilot, vnav, holding, pushback and extras
