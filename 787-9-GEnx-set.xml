@@ -3,11 +3,11 @@
 <PropertyList>
 
 	<sim>
-		<description>Boeing 787-9</description>
+		<description>Boeing 787-9 (GEnx-1B76 Engines)</description>
 		<flight-model>jsb</flight-model>
-		<aero>787-9</aero>
+		<aero>787-9-GEnx</aero>
 		<authors>Authors.txt</authors>
-		<engine>trent_1000</engine>
+		<engine>genx-1b</engine>
 
 		<model>
 			<path>Aircraft/787-9/Models/787-9.xml</path>
