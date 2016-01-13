@@ -3,7 +3,7 @@
 <PropertyList>
 
 	<sim>
-		<description>Boeing 787-900</description>
+		<description>Boeing 787-9</description>
 		<flight-model>jsb</flight-model>
 		<aero>787-9</aero>
 		<authors>Authors.txt</authors>
