@@ -106,7 +106,7 @@
 
     <nasal>
         <load>
-   var livery_update = aircraft.livery_update.new("Aircraft/787-8/Models/Liveries");
+   var livery_update = aircraft.livery_update.new("Aircraft/787-9/Models/Liveries");
         </load>
 
         <unload>
