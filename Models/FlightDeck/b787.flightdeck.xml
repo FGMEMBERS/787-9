@@ -66,7 +66,7 @@
 		<inherits-from>Effects/lightmap</inherits-from>
 		<parameters>
 			<texture n="1">
-				<image>Aircraft/787-8/Models/Effects/mainpanel-lightmap.png</image>
+				<image>Aircraft/787-9/Models/Effects/mainpanel-lightmap.png</image>
 			</texture>
 			<condition>
 				<use>controls/lighting/cockpit</use>
@@ -207,7 +207,7 @@
 	</model>
 
 	<model>
-		<path>Aircraft/787-8/Models/Instruments/PFD2.xml</path>
+		<path>Aircraft/787-9/Models/Instruments/PFD2.xml</path>
 		<offsets>
 			<x-m>-23.78</x-m>
 			<y-m>0.641714</y-m>
