@@ -396,7 +396,7 @@
                         <binding>
 							<command>nasal</command>
 							<script>
-							 var ap_dialog = gui.Dialog.new("sim/gui/dialogs/ap_dialog/dialog", "Aircraft/787-8/Systems/autopilot-dlg.xml");
+							 var ap_dialog = gui.Dialog.new("sim/gui/dialogs/ap_dialog/dialog", "Aircraft/787-9/Systems/autopilot-dlg.xml");
 							 ap_dialog.open();
 							</script>
                         </binding>
@@ -412,7 +412,7 @@
                     </item>
                 </menu>
 				<menu n="100">
-					<label>Boeing 787-8</label>
+					<label>Boeing 787-9</label>
 <enabled type="bool">true</enabled>
 					<item>
 						<name>autostart</name>
@@ -437,7 +437,7 @@
 						<binding>
 							<command>nasal</command>
 							<script>
-							 var copilotdialog = gui.Dialog.new("sim/gui/dialogs/copilot/dialog", "Aircraft/787-8/Systems/copilot-dlg.xml");
+							 var copilotdialog = gui.Dialog.new("sim/gui/dialogs/copilot/dialog", "Aircraft/787-9/Systems/copilot-dlg.xml");
 							 copilotdialog.open();
 							</script>
 						</binding>
@@ -447,7 +447,7 @@
 						<binding>
 							<command>nasal</command>
 							<script>
-							 var flightplan = gui.Dialog.new("sim/gui/dialogs/flightplan/dialog", "Aircraft/787-8/Systems/flightplan-dlg.xml");
+							 var flightplan = gui.Dialog.new("sim/gui/dialogs/flightplan/dialog", "Aircraft/787-9/Systems/flightplan-dlg.xml");
 							 flightplan.open();
 							</script>
 						</binding>
@@ -466,7 +466,7 @@
 						<binding>
 							<command>nasal</command>
 							<script>
-							 var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/787-8/Systems/lights-dlg.xml");
+							 var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/787-9/Systems/lights-dlg.xml");
 							 lights.open();
 							</script>
 						</binding>
@@ -477,7 +477,7 @@
 						<binding>
 							<command>nasal</command>
 							<script>
-							 var announce = gui.Dialog.new("sim/gui/dialogs/announcements/dialog", "Aircraft/787-8/Systems/announcements-dlg.xml");
+							 var announce = gui.Dialog.new("sim/gui/dialogs/announcements/dialog", "Aircraft/787-9/Systems/announcements-dlg.xml");
 							 announce.open();
 							</script>
 						</binding>
@@ -487,7 +487,7 @@
 						<binding>
 							<command>nasal</command>
 							<script>
-							 var failures = gui.Dialog.new("sim/gui/dialogs/failures/dialog", "Aircraft/787-8/Systems/failures-dlg.xml");
+							 var failures = gui.Dialog.new("sim/gui/dialogs/failures/dialog", "Aircraft/787-9/Systems/failures-dlg.xml");
 							 failures.open();
 							</script>
 						</binding>
@@ -497,7 +497,7 @@
                         <binding>
                             <command>nasal</command>
                             <script>
-                            var ground_services = gui.Dialog.new("sim/gui/dialogs/ground_services/dialog", "Aircraft/787-8/Systems/ground_services-dlg.xml");
+                            var ground_services = gui.Dialog.new("sim/gui/dialogs/ground_services/dialog", "Aircraft/787-9/Systems/ground_services-dlg.xml");
 							 ground_services.open();
                             </script>
                         </binding>
@@ -507,7 +507,7 @@
                         <binding>
                             <command>nasal</command>
                             <script>
-                            var fuel_truck = gui.Dialog.new("sim/gui/dialogs/fuel_truck/dialog", "Aircraft/787-8/Systems/fuel_truck.xml");
+                            var fuel_truck = gui.Dialog.new("sim/gui/dialogs/fuel_truck/dialog", "Aircraft/787-9/Systems/fuel_truck.xml");
 							 fuel_truck.open();
                             </script>
                         </binding>
@@ -518,7 +518,7 @@
 						<binding>
 							<command>nasal</command>
 							<script>
-							 var dualcontrol = gui.Dialog.new("sim/gui/dialogs/dualcontrol/dialog", "Aircraft/787-8/Systems/dualcontrol-dlg.xml");
+							 var dualcontrol = gui.Dialog.new("sim/gui/dialogs/dualcontrol/dialog", "Aircraft/787-9/Systems/dualcontrol-dlg.xml");
 							 dualcontrol.open();
 							</script>
 						</binding>
@@ -910,7 +910,7 @@
 				<binding>
 							<command>nasal</command>
 							<script>
-							 var ap_dialog = gui.Dialog.new("sim/gui/dialogs/ap_dialog/dialog", "Aircraft/787-8/Systems/autopilot-dlg.xml");
+							 var ap_dialog = gui.Dialog.new("sim/gui/dialogs/ap_dialog/dialog", "Aircraft/787-9/Systems/autopilot-dlg.xml");
 							 ap_dialog.open();
 							</script>
 				</binding>
