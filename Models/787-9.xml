@@ -89,7 +89,7 @@
 		<object-name>fuselage</object-name>
 	</effect>
 
-	<!--<effect>
+	<effect>
 		<inherits-from>Effects/lightmap</inherits-from>
 		<parameters>
 			<texture n="1">
@@ -100,7 +100,7 @@
 		</condition>
 		</parameters>
 		<object-name>wings_lightmap</object-name>
-	</effect> -->
+	</effect> 
 
 <!-- Livery Select -->
 
@@ -113,22 +113,8 @@
             livery_update.stop();
         </unload>
     </nasal>
-<!-- hide nose gear in internal view -->
-<animation>
-  <type>select</type>
-  <object-name>NGear</object-name>
-  <object-name>NGearStrut</object-name>
-  <object-name>NoseWheel</object-name>
-  <condition>
-   <not>
-      <property>sim/current-view/internal</property>
-   </not>
-  </condition>
-</animation>
 
-
-
-<animation>
+	<animation>
         <type>material</type>
         <object-name>fin</object-name>
         <object-name>bodyfairing</object-name>
@@ -137,7 +123,7 @@
         <object-name>eng2fan</object-name>
         <object-name>eng2fanb</object-name>
         <object-name>fuselage</object-name>
-        <object-name>fuselage.002</object-name>
+        <object-name>fuselage.001</object-name>
         <object-name>lhfdoor</object-name>
         <object-name>lhfnosedoor</object-name>
         <object-name>lhgearibdoor</object-name>
@@ -198,16 +184,22 @@
  <name>Pushback</name>
  <path>Models/Airport/Pushback/Goldhofert.xml</path>
  <offsets>
-  <x-m>-20.56</x-m>
+  <x-m>-24.2</x-m>
   <y-m>0</y-m>
-  <z-m>-3.65</z-m>
+  <z-m>-3.55</z-m>
  </offsets>
 </model>
 
 <!-- Flight Deck -->
 
 <model>
+ <name>flightdeck</name>
  <path>FlightDeck/b787.flightdeck.xml</path>
+	<offsets>
+		<x-m>-3.70</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.05</z-m>
+	</offsets>
 </model>
 
 <!-- Landing Gear Animations -->
@@ -243,7 +235,7 @@
     </entry>
   </interpolation>
   <center>
-   <x-m>-21</x-m>
+   <x-m>-24.25</x-m>
    <y-m>-0.6</y-m>
    <z-m>-1.35</z-m>
   </center>
@@ -327,7 +319,7 @@
     </entry>
   </interpolation>
   <center>
-   <x-m>-21</x-m>
+   <x-m>-24.25</x-m>
    <y-m>0.6</y-m>
    <z-m>-1.35</z-m>
   </center>
@@ -403,7 +395,7 @@
     </entry>
   </interpolation>
   <center>
-   <x-m>-22.5</x-m>
+   <x-m>-25.95</x-m>
    <y-m>-0.85</y-m>
    <z-m>-1.07</z-m>
   </center>
@@ -471,7 +463,7 @@
     </entry>
   </interpolation>
   <center>
-   <x-m>-22.5</x-m>
+   <x-m>-25.95</x-m>
    <y-m>0.85</y-m>
    <z-m>-1.07</z-m>
   </center>
@@ -933,215 +925,170 @@
 
 <!-- Aerodynamic G Forces -->
 
-<animation>
-  <type>rotate</type>
-  <object-name>rwinga</object-name>
-  <object-name>rhlightedwinga</object-name>
-  <object-name>rhmfairing</object-name>
-  <object-name>rhobslata</object-name>
-  <object-name>rhobslat_a</object-name>
-  <object-name>rhlightedslata</object-name>
-<!--  <object-name>rhibspoilera</object-name> -->
-  <object-name>rhibaileron</object-name>
-  <object-name>rhspoilera</object-name>
-  <object-name>rhobspoilera</object-name>
-  <object-name>rhibflapa</object-name>
-  <object-name>rhobflapa</object-name>
-  <object-name>rwingb</object-name>
-  <object-name>rhobslatb</object-name>
-  <object-name>rhobslat_b</object-name>
-  <object-name>rhobspoilerb</object-name>
-  <object-name>rhobflapb</object-name>
-  <object-name>rwingc</object-name>
-  <object-name>rhobslatc</object-name>
-  <object-name>rhobslat_c</object-name>
-  <object-name>rhobaileron</object-name>
-  <object-name>rhnavlite</object-name>
-  <object-name>rwhiteflash</object-name>
-  <object-name>rhobfairing</object-name>
-  <object-name>rchrome</object-name>
-  <object-name>greennav</object-name>
-  <object-name>strobe.right</object-name>
-  <object-name>fueldump.r</object-name>
-  <property>sim/systems/wingflexer/z-m</property>
-  <factor>10.</factor>
-  <offset-deg>0</offset-deg>
-  <center>
-   <x-m>0</x-m>
-   <y-m>9.5</y-m>
-   <z-m>1.0</z-m>
-  </center>
-  <axis>
-   <x>4</x>
-   <y>-1</y>
-   <z>-0.25</z>
-  </axis>
-</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>lwinga</object-name>
+		<object-name>lhlightedwinga</object-name>
+		<object-name>lhmfairing</object-name>
+		<object-name>lhlightedslata</object-name>
+		<object-name>lhobslata</object-name>
+		<object-name>lhobslat_a</object-name>
+		<!--  <object-name>lhibspoilera</object-name> -->
+		<object-name>lhspoilera</object-name>
+		<object-name>lhobspoilera</object-name>
+		<object-name>lhibflapa</object-name>
+		<object-name>lhibaileron</object-name>
+		<object-name>lhobflapa</object-name>
+		<object-name>lwingb</object-name>
+		<object-name>lhobslatb</object-name>
+		<object-name>lhobslat_b</object-name>
+		<object-name>lhobspoilerb</object-name>
+		<object-name>lhobflapb</object-name>
+		<object-name>lwingc</object-name>
+		<object-name>lhobslatc</object-name>
+		<object-name>lhobslat_c</object-name>
+		<object-name>lhobaileron</object-name>
+		<object-name>lhnavlite</object-name>
+		<object-name>lwhiteflash</object-name>
+		<object-name>lhobfairing</object-name>
+		<object-name>lchrome</object-name>
+		<object-name>rednav</object-name>
+		<object-name>strobe.left</object-name>
+		<object-name>fueldump.l</object-name>
+		<property>fdm/jsbsim/aero/coefficient/CLalpha</property>
+		<factor>0.00001</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>0</x-m>
+			<y-m>-9.5</y-m>
+			<z-m>1.0</z-m>
+		</center>
+		<axis>
+			<x>-4</x>
+			<y>-1</y>
+			<z>0.25</z>
+		</axis>
+	</animation>
 
-<animation>
-  <type>rotate</type>
-  <object-name>lwinga</object-name>
-  <object-name>lhlightedwinga</object-name>
-  <object-name>lhmfairing</object-name>
-  <object-name>lhlightedslata</object-name>
-  <object-name>lhobslata</object-name>
-  <object-name>lhobslat_a</object-name>
-<!--  <object-name>lhibspoilera</object-name> -->
-  <object-name>lhspoilera</object-name>
-  <object-name>lhobspoilera</object-name>
-  <object-name>lhibflapa</object-name>
-  <object-name>lhibaileron</object-name>
-  <object-name>lhobflapa</object-name>
-  <object-name>lwingb</object-name>
-  <object-name>lhobslatb</object-name>
-  <object-name>lhobslat_b</object-name>
-  <object-name>lhobspoilerb</object-name>
-  <object-name>lhobflapb</object-name>
-  <object-name>lwingc</object-name>
-  <object-name>lhobslatc</object-name>
-  <object-name>lhobslat_c</object-name>
-  <object-name>lhobaileron</object-name>
-  <object-name>lhnavlite</object-name>
-  <object-name>lwhiteflash</object-name>
-  <object-name>lhobfairing</object-name>
-  <object-name>lchrome</object-name>
-  <object-name>rednav</object-name>
-  <object-name>strobe.left</object-name>
-  <object-name>fueldump.l</object-name>
-  <property>sim/systems/wingflexer/z-m</property>
-  <factor>10.</factor>
-  <offset-deg>0</offset-deg>
-  <center>
-   <x-m>0</x-m>
-   <y-m>-9.5</y-m>
-   <z-m>1.0</z-m>
-  </center>
-  <axis>
-   <x>-4</x>
-   <y>-1</y>
-   <z>0.25</z>
-  </axis>
-</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>rwingb</object-name>
+		<object-name>rhobslatb</object-name>
+		<object-name>rhobslat_b</object-name>
+		<object-name>rhobspoilerb</object-name>
+		<object-name>rhobflapb</object-name>
+		<object-name>rwingc</object-name>
+		<object-name>rhobslatc</object-name>
+		<object-name>rhobslat_c</object-name>
+		<object-name>rhobaileron</object-name>
+		<object-name>rhnavlite</object-name>
+		<object-name>rwhiteflash</object-name>
+		<object-name>rhobfairing</object-name>
+		<object-name>rchrome</object-name>
+		<object-name>greennav</object-name>
+		<object-name>strobe.right</object-name>
+		<object-name>fueldump.r</object-name>
+		<property>fdm/jsbsim/aero/coefficient/CLalpha</property>
+		<factor>0.00001</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>3.6</x-m>
+			<y-m>15.7</y-m>
+			<z-m>1.6</z-m>
+		</center>
+		<axis>
+			<x>2</x>
+			<y>-1</y>
+			<z>0.2</z>
+		</axis>
+	</animation>
 
-<animation>
-  <type>rotate</type>
-  <object-name>rwingb</object-name>
-  <object-name>rhobslatb</object-name>
-  <object-name>rhobslat_b</object-name>
-  <object-name>rhobspoilerb</object-name>
-  <object-name>rhobflapb</object-name>
-  <object-name>rwingc</object-name>
-  <object-name>rhobslatc</object-name>
-  <object-name>rhobslat_c</object-name>
-  <object-name>rhobaileron</object-name>
-  <object-name>rhnavlite</object-name>
-  <object-name>rwhiteflash</object-name>
-  <object-name>rhobfairing</object-name>
-  <object-name>rchrome</object-name>
-  <object-name>greennav</object-name>
-  <object-name>strobe.right</object-name>
-  <object-name>fueldump.r</object-name>
-  <property>sim/systems/wingflexer/z-m</property>
-  <factor>10.</factor>
-  <offset-deg>0</offset-deg>
-  <center>
-   <x-m>3.6</x-m>
-   <y-m>15.7</y-m>
-   <z-m>1.6</z-m>
-  </center>
-  <axis>
-   <x>2</x>
-   <y>-1</y>
-   <z>0.2</z>
-  </axis>
-</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>lwingb</object-name>
+		<object-name>lhobslatb</object-name>
+		<object-name>lhobslat_b</object-name>
+		<object-name>lhobspoilerb</object-name>
+		<object-name>lhobflapb</object-name>
+		<object-name>lwingc</object-name>
+		<object-name>lhobslatc</object-name>
+		<object-name>lhobslat_c</object-name>
+		<object-name>lhobaileron</object-name>
+		<object-name>lhnavlite</object-name>
+		<object-name>lwhiteflash</object-name>
+		<object-name>lhobfairing</object-name>
+		<object-name>lchrome</object-name>
+		<object-name>rednav</object-name>
+		<object-name>strobe.left</object-name>
+		<object-name>fueldump.l</object-name>
+		<property>fdm/jsbsim/aero/coefficient/CLalpha</property>
+		<factor>0.00001</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>3.6</x-m>
+			<y-m>-15.7</y-m>
+			<z-m>1.6</z-m>
+		</center>
+		<axis>
+			<x>-2</x>
+			<y>-1</y>
+			<z>0.2</z>
+		</axis>
+	</animation>
 
-<animation>
-  <type>rotate</type>
-  <object-name>lwingb</object-name>
-  <object-name>lhobslatb</object-name>
-  <object-name>lhobslat_b</object-name>
-  <object-name>lhobspoilerb</object-name>
-  <object-name>lhobflapb</object-name>
-  <object-name>lwingc</object-name>
-  <object-name>lhobslatc</object-name>
-  <object-name>lhobslat_c</object-name>
-  <object-name>lhobaileron</object-name>
-  <object-name>lhnavlite</object-name>
-  <object-name>lwhiteflash</object-name>
-  <object-name>lhobfairing</object-name>
-  <object-name>lchrome</object-name>
-  <object-name>rednav</object-name>
-  <object-name>strobe.left</object-name>
-  <object-name>fueldump.l</object-name>
-  <property>sim/systems/wingflexer/z-m</property>
-  <factor>10.</factor>
-  <offset-deg>0</offset-deg>
-  <center>
-   <x-m>3.6</x-m>
-   <y-m>-15.7</y-m>
-   <z-m>1.6</z-m>
-  </center>
-  <axis>
-   <x>-2</x>
-   <y>-1</y>
-   <z>0.2</z>
-  </axis>
-</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>rwingc</object-name>
+		<object-name>rhobslatc</object-name>
+		<object-name>rhobslat_c</object-name>
+		<object-name>rhobaileron</object-name>
+		<object-name>rhnavlite</object-name>
+		<object-name>rwhiteflash</object-name>
+		<object-name>rchrome</object-name>
+		<object-name>greennav</object-name>
+		<object-name>strobe.right</object-name>
+		<property>fdm/jsbsim/aero/coefficient/CLalpha</property>
+		<factor>0.00001</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>7.5</x-m>
+			<y-m>21.7</y-m>
+			<z-m>2.6</z-m>
+		</center>
+		<axis>
+			<x>1.6</x>
+			<y>-1</y>
+			<z>0.2</z>
+		</axis>
+	</animation>
 
-<animation>
-  <type>rotate</type>
-  <object-name>rwingc</object-name>
-  <object-name>rhobslatc</object-name>
-  <object-name>rhobslat_c</object-name>
-  <object-name>rhobaileron</object-name>
-  <object-name>rhnavlite</object-name>
-  <object-name>rwhiteflash</object-name>
-  <object-name>rchrome</object-name>
-  <object-name>greennav</object-name>
-  <object-name>strobe.right</object-name>
-  <property>sim/systems/wingflexer/z-m</property>
-  <factor>10.</factor>
-  <offset-deg>0</offset-deg>
-  <center>
-   <x-m>7.5</x-m>
-   <y-m>21.7</y-m>
-   <z-m>2.6</z-m>
-  </center>
-  <axis>
-   <x>1.6</x>
-   <y>-1</y>
-   <z>0.2</z>
-  </axis>
-</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>lwingc</object-name>
+		<object-name>lhobslatc</object-name>
+		<object-name>lhobslat_c</object-name>
+		<object-name>lhobaileron</object-name>
+		<object-name>lhnavlite</object-name>
+		<object-name>lwhiteflash</object-name>
+		<object-name>lchrome</object-name>
+		<object-name>rednav</object-name>
+		<object-name>strobe.left</object-name>
+		<property>fdm/jsbsim/aero/coefficient/CLalpha</property>
+		<factor>0.00001</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>7.5</x-m>
+			<y-m>-21.7</y-m>
+			<z-m>2.6</z-m>
+		</center>
+		<axis>
+			<x>-1.6</x>
+			<y>-1</y>
+			<z>0.2</z>
+		</axis>
+	</animation>
 
-<animation>
-  <type>rotate</type>
-  <object-name>lwingc</object-name>
-  <object-name>lhobslatc</object-name>
-  <object-name>lhobslat_c</object-name>
-  <object-name>lhobaileron</object-name>
-  <object-name>lhnavlite</object-name>
-  <object-name>lwhiteflash</object-name>
-  <object-name>lchrome</object-name>
-  <object-name>rednav</object-name>
-  <object-name>strobe.left</object-name>
-  <property>sim/systems/wingflexer/z-m</property>
-  <factor>10.</factor>
-  <offset-deg>0</offset-deg>
-  <center>
-   <x-m>7.5</x-m>
-   <y-m>-21.7</y-m>
-   <z-m>2.6</z-m>
-  </center>
-  <axis>
-   <x>-1.6</x>
-   <y>-1</y>
-   <z>0.2</z>
-  </axis>
-</animation>
-
-<!-- Landing Lights -->
+	<!-- Landing Lights -->
 
 <model>
 <path>Aircraft/787-9/Models/Lights/landing-nose.xml</path>
@@ -1154,7 +1101,7 @@
   </condition>
 
 <offsets>
-<x-m> -21.0353</x-m>
+<x-m> -23.9012</x-m>
 <y-m>  0.00</y-m>
 <z-m> -1.9979</z-m>
 </offsets>
@@ -1171,7 +1118,7 @@
   </condition>
 
 <offsets>
-<x-m> -21.0353</x-m>
+<x-m> -23.9012</x-m>
 <y-m>  0.00</y-m>
 <z-m> -2</z-m>
 </offsets>
@@ -1563,7 +1510,7 @@
   <factor>20</factor>
   <offset-deg>0</offset-deg>
   <center>
-   <x-m>27.911</x-m>
+   <x-m>33.011</x-m>
    <y-m>-5.5</y-m>
    <z-m>2.6</z-m>
   </center>
@@ -1581,7 +1528,7 @@
   <factor>20</factor>
   <offset-deg>0</offset-deg>
   <center>
-   <x-m>27.911</x-m>
+   <x-m>33.011</x-m>
    <y-m>5.5</y-m>
    <z-m>2.6</z-m>
   </center>
@@ -1620,7 +1567,7 @@
   <factor>60</factor>
   <offset-deg>0</offset-deg>
   <center>
-   <x-m>-20.576</x-m>
+   <x-m>-23.405</x-m>
    <y-m>0.0</y-m>
    <z-m>-1.164</z-m>
   </center>
@@ -2454,7 +2401,7 @@
             </entry>
         </interpolation>
         <center>
-            <x-m>-20.48</x-m>
+            <x-m>-23.25</x-m>
             <y-m>0.0</y-m>
             <z-m>-1.063</z-m>
         </center>
@@ -2835,7 +2782,7 @@
             <z>0</z>
         </axis>
         <center>
-            <x-m>-20.7626</x-m>
+            <x-m>-23.60</x-m>
             <y-m>0</y-m>
             <z-m>-3.2644</z-m>
         </center>
