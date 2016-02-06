@@ -2912,9 +2912,9 @@
 
     <!-- Ground Stuff -->
 
-<model>
+<!--<model>
 	<path>Ground/b787-shadow.xml</path>
-</model>
+</model> disabled for pre 3.6-->
 
 <model>
 	<name>ground-lights</name>
