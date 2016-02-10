@@ -11,9 +11,11 @@
 
 		<model>
 			<path>Aircraft/787-9/Models/787-9.xml</path>
+			
             <livery>
                <file type="string">BOE</file>
             </livery>
+			
 			<b787>
 				<heading-bug-pfd-deg type="double">0</heading-bug-pfd-deg>
 				<heading-bug-deg type="double">0</heading-bug-deg>
@@ -23,6 +25,7 @@
 				<ias-bug-kt-norm type="double">0</ias-bug-kt-norm>
 				<mach-bug-kt-norm type="double">0</mach-bug-kt-norm>
 			</b787>
+			
 			<pushback>
 				<kp type="double">300</kp>
 				<ki type="double">0</ki>
@@ -38,7 +41,7 @@
 
         <hud>
     	        <path n="1">Aircraft/787-9/Models/FlightDeck/HUD2.xml</path>
-	</hud>
+		</hud>
 
 	<flaps>
 		<setting>0.000</setting>  <!-- flaps up -->
