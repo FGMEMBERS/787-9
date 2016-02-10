@@ -209,14 +209,14 @@
 		</alarms>
 
 	<view n="0">
-		<name>Pilot View</name>
+		<name>Captain's View</name>
 		<type>lookfrom</type>
 		<internal type="bool">true</internal>
 		<cockpit type="bool">true</cockpit>
 		<config>
 			<x-offset-m type="double">-0.603</x-offset-m>
-			<y-offset-m type="double">2.242</y-offset-m>
-			<z-offset-m type="double">-22.612</z-offset-m>
+			<y-offset-m type="double">2.08</y-offset-m>
+			<z-offset-m type="double">-26.20</z-offset-m>
 			<pitch-offset-deg>-10.3</pitch-offset-deg>
 			<default-field-of-view-deg type="double">60.0</default-field-of-view-deg>
 		</config>
