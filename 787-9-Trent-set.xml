@@ -52,6 +52,8 @@
 
 		<startup>
 			<splash-texture>Aircraft/787-9/splash.png</splash-texture>
+			<splash-texture>Aircraft/787-9/splash1.png</splash-texture>
+			<splash-texture>Aircraft/787-9/splash2.png</splash-texture>
 		</startup>
 
 	<!-- Initialize External Connections as False, the clients will change them to true if connection is established -->
