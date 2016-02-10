@@ -20,51 +20,7 @@
 		<IAPs type="int">5</IAPs>
 	</WSSS>
 
-	<KLAX>
-		<SID-0 type="string">SNGO6</SID-0>
-		<SIDs type="int">1</SIDs>
-		<STAR-0 type="string">REDEYE2</STAR-0>
-		<STARs type="int">1</STARs>
-		<IAP-0 type="string">06L-ILS</IAP-0>
-		<IAP-1 type="string">06R-ILS</IAP-1>
-		<IAP-2 type="string">07L-ILS</IAP-2>
-		<IAP-3 type="string">27R-ILS</IAP-3>
-		<IAPs type="int">4</IAPs>
-	</KLAX>
-
-	<KIAH>
-		<STAR-0 type="string">RIICE3_1</STAR-0>
-		<STAR-1 type="string">RIICE3_2</STAR-1>
-		<STARs type="int">2</STARs>
-		<IAP-0 type="string">09-ILS</IAP-0>
-		<IAP-1 type="string">15R-ILS</IAP-1>
-		<IAPs type="int">2</IAPs>
-	</KIAH>
-
-	<VABB>
-		<SID-0 type="string">EKPOSxA</SID-0>
-		<SIDs type="int">1</SIDs>
-		<IAP-0 type="string">09-ILS-DME</IAP-0>
-		<IAP-1 type="string">14-ILS-DME</IAP-1>
-		<IAPs type="int">2</IAPs>
-	</VABB>
-
-	<KMEM>
-		<STAR-0 type="string">BEERT4</STAR-0>
-		<STARs type="int">1</STARs>
-		<IAP-0 type="string">09-ILS-LOC</IAP-0>
-		<IAPs type="int">1</IAPs>
-	</KMEM>
-	
-	<LOWI>
-		<STAR-0 type="string">26-RTT</STAR-0>
-		<STAR-1 type="string">West-NDB_KTI</STAR-1>
-		<STARs type="int">2</STARs>
-		<IAP-0 type="string">26-DME</IAP-0>
-		<IAPs type="int">1</IAPs>
-		<SID-0 type="string">08-RTT</SID-0>
-		<SIDs type="int">1</SIDs>
-	</LOWI>
+	<!--due to licencing concerns, there are no charts included. Feel free to add your own in the format as above-->
 
 </chartsDB>
 
