@@ -6,7 +6,7 @@
 		<description>Boeing 787-9 (Trent 1000 Engines)</description>
 		<flight-model>jsb</flight-model>
 		<aero>787-9-Trent</aero>
-		<authors>Authors.txt</authors>
+		<authors>J Redpath, MSA-S23, Evaair</authors>
 		<engine>trent_1000</engine>
 
 		<model>

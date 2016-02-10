@@ -6,7 +6,7 @@
 		<description>Boeing 787-9 (GEnx-1B76 Engines)</description>
 		<flight-model>jsb</flight-model>
 		<aero>787-9-GEnx</aero>
-		<authors>Authors.txt</authors>
+		<authors>J Redpath, MSA-S23, Evaair</authors>
 		<engine>genx-1b</engine>
 
 		<model>
