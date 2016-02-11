@@ -6,7 +6,7 @@
 		<description>Boeing 787-9 (Trent 1000 Engines)</description>
 		<flight-model>jsb</flight-model>
 		<aero>787-9-Trent</aero>
-		<authors>Authors.txt</authors>
+		<authors>J Redpath, MSA-S23, Evaair</authors>
 		<engine>trent_1000</engine>
 
 		<model>
@@ -52,6 +52,8 @@
 
 		<startup>
 			<splash-texture>Aircraft/787-9/splash.png</splash-texture>
+			<splash-texture>Aircraft/787-9/splash1.png</splash-texture>
+			<splash-texture>Aircraft/787-9/splash2.png</splash-texture>
 		</startup>
 
 	<!-- Initialize External Connections as False, the clients will change them to true if connection is established -->
@@ -209,14 +211,14 @@
 		</alarms>
 
 	<view n="0">
-		<name>Pilot View</name>
+		<name>Captain's View</name>
 		<type>lookfrom</type>
 		<internal type="bool">true</internal>
 		<cockpit type="bool">true</cockpit>
 		<config>
 			<x-offset-m type="double">-0.603</x-offset-m>
-			<y-offset-m type="double">2.242</y-offset-m>
-			<z-offset-m type="double">-22.612</z-offset-m>
+			<y-offset-m type="double">2.08</y-offset-m>
+			<z-offset-m type="double">-26.20</z-offset-m>
 			<pitch-offset-deg>-10.3</pitch-offset-deg>
 			<default-field-of-view-deg type="double">60.0</default-field-of-view-deg>
 		</config>
