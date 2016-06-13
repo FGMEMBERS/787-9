@@ -28,8 +28,8 @@
 				<use>controls/lighting/landing-lights[0]</use>
 			</condition>
 		</parameters>
-		<object-name>fuselage</object-name>
 		<object-name>bodyfairing</object-name>
+		<object-name>fuselage.001</object-name>
 	</effect>
 
 	<effect>
@@ -86,7 +86,6 @@
 			<property>sim/model/lights/beacon/state</property>
 		</condition>
 		</parameters>
-		<object-name>fuselage</object-name>
 	</effect>
 
 	<effect>
@@ -2912,9 +2911,9 @@
 
     <!-- Ground Stuff -->
 
-<model>
+<!--<model>
 	<path>Ground/b787-shadow.xml</path>
-</model>
+</model> disabled for pre 3.6-->
 
 <model>
 	<name>ground-lights</name>
