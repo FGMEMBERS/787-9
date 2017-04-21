@@ -433,7 +433,6 @@
    <summer name="Rudder Command Sum">
       <input>fcs/rudder-cmd-norm</input>
 	  <!--<input>fcs/rudder-fbw-output</input>-->
-	  <input>
       <input>fcs/yaw-trim-cmd-norm</input>
       <clipto>
         <min> -0.25 </min>
