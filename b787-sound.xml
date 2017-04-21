@@ -138,80 +138,45 @@
 <!-- Engine External Sounds -->
 
     <engine>
-        <name>left n1</name>
-        <path>Aircraft/787-9/Sounds/whine.wav</path>
-        <mode>looped</mode>
+		<name>low l out</name>
+		<mode>looped</mode>
+		<path>Aircraft/787-9/Sounds/xlow.wav</path>
+		<property>engines/engine[0]/n1</property>
 		<condition>
-			<not>
-				<property>sim/current-view/internal</property>
-			</not>
-            <greater-than>
-                <property>engines/engine[0]/n1</property>
-				<value>0</value>
-            </greater-than>
+			<not><property>sim/current-view/internal</property></not>
 		</condition>
-        <pitch>
-            <property>engines/engine[0]/n1</property>
-            <offset>0</offset>
-            <factor>0.02</factor>
-            <min>0.0</min>
-            <max>2.0</max>
-        </pitch>
-        <volume>
-            <property>engines/engine[0]/n1</property>
-            <factor>0.1</factor>
-            <min>0.0</min>
-            <max>0.6</max>
-        </volume>
-        <volume>
-            <property>sim/sound/volume</property>
-        </volume>
-        <position>
-            <x>0</x>
-            <y>-8</y>
-            <z>0</z>
-        </position>
-        <reference-dist>10.0</reference-dist>
-        <max-dist>50.0</max-dist>
-    </engine>	
-
-    <engine1>
-        <name>right n1</name>
-        <path>Aircraft/787-9/Sounds/whine.wav</path>
-        <mode>looped</mode>
+		<volume>
+			<property>engines/engine[0]/n1</property>
+			<factor>0.044</factor>
+			<max>1</max>
+		</volume>
+		<pitch>
+			<property>engines/engine[0]/n1</property>
+			<offset>0</offset>
+			<factor>0.02</factor>
+			<max>2</max>
+		</pitch>
+	</engine>
+	<engine>
+		<name>low r out</name>
+		<mode>looped</mode>
+		<path>Aircraft/787-9/Sounds/xlow.wav</path>
+		<property>engines/engine[1]/n1</property>
 		<condition>
-			<not>
-				<property>sim/current-view/internal</property>
-			</not>
-            <greater-than>
-                <property>engines/engine[1]/n1</property>
-				<value>0</value>
-            </greater-than>
+			<not><property>sim/current-view/internal</property></not>
 		</condition>
-        <pitch>
-            <property>engines/engine[1]/n1</property>
-            <offset>0</offset>
-            <factor>0.02</factor>
-            <min>0.0</min>
-            <max>2.0</max>
-        </pitch>
-        <volume>
-            <property>engines/engine[1]/n1</property>
-            <factor>0.1</factor>
-            <min>0.0</min>
-            <max>0.6</max>
-        </volume>
-        <volume>
-            <property>sim/sound/volume</property>
-        </volume>
-        <position>
-            <x>0</x>
-            <y>8</y>
-            <z>0</z>
-        </position>
-        <reference-dist>10.0</reference-dist>
-        <max-dist>50.0</max-dist>
-    </engine1>
+		<volume>
+			<property>engines/engine[1]/n1</property>
+			<factor>0.044</factor>
+			<max>1</max>
+		</volume>
+		<pitch>
+			<property>engines/engine[1]/n1</property>
+			<offset>0</offset>
+			<factor>0.02</factor>
+			<max>2</max>
+		</pitch>
+	</engine>
 
     <engine2>
         <name>left n2</name>

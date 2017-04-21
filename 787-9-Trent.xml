@@ -6,9 +6,9 @@
 
 <fileheader>
   <author> Narendran Muraleedharan, Dwayne Gable and Nicky Ivy, Jonathan Redpath</author>
-  <filecreationdate> 2015-01-12 </filecreationdate>
-  <version>$Revision: 1.0 $</version>
-  <description> Flight Dynamics Model for the Boeing 787-9 </description>
+  <filecreationdate> 2017-04-21 </filecreationdate>
+  <version>$Revision: 1.1 $</version>
+  <description> Flight Dynamics Model for the Boeing 787-9. Revised by Jonathan Redpath </description>
 </fileheader>
 
 <!-- UNIT CONVERSIONS :
@@ -18,7 +18,7 @@
 1 feet  = 12 inches -->
 
 <metrics>
-   <wingarea  unit="FT2"> 3501.7984 </wingarea> <!-- Wikipedia -->
+   <wingarea  unit="FT2"> 3880 </wingarea> <!-- Wikipedia -->
    <wingspan  unit="FT" >  197.3 </wingspan> <!-- Wikipedia -->
    <wing_incidence unit="DEG"> 2 </wing_incidence> <!-- From old 787 FDM -->
    <chord     unit="FT" >   38.94 </chord> <!-- Measured -->
