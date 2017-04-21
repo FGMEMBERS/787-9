@@ -20,7 +20,7 @@
 		<name>On/off</name>
 		<type>select</type>
 		<object-name>Light</object-name>
-		<object-name>Cone</object-name>
+		<!--<object-name>Cone</object-name>-->
 		<condition>
 			<property>controls/lighting/landing-lights[0]</property>
 		</condition>
