@@ -72,29 +72,14 @@
 
 	<systems>
 		<autopilot>
-			<path>Aircraft/787-9/Systems/b787-autopilot.xml</path>
+			<path>Aircraft/787-9/Systems/it-autoflight.xml</path>
 		</autopilot>
 		<autopilot>
-			<path>Aircraft/Generic/generic-autopilot-helper.xml</path>
-		</autopilot>
-
-		<!-- Vertical Navigation PID Controller -->
-
-		<autopilot>
-			<path>Aircraft/787-9/Systems/vnav.xml</path>
-		</autopilot>
-
-		<!-- Automatic Holding Pattern PID Controller -->
-
-		<autopilot>
-			<path>Aircraft/787-9/Systems/holding-pattern.xml</path>
+			<path>Aircraft/787-9/Systems/it-autothrust.xml</path>
 		</autopilot>
 
 		<!-- Fly-By-Wire Auto Stabilize PID Controller -->
 
-		<autopilot>
-			<path>Aircraft/787-9/Systems/fly-by-wire.xml</path>
-		</autopilot>
 		<autopilot>
 			<name>Spoilers</name>
 			<path>Aircraft/787-9/Systems/b787-spoilers.xml</path>
@@ -441,10 +426,10 @@
 				<name>Delete</name>
 				<desc>toggle thrust reversers</desc>
 			</key>
-			<key>
+			<!--<key>
 				<name>Ctrl-f</name>
 				<desc>Toggle FBW Override</desc>
-			</key>
+			</key>-->
 			<key>
 				<name>Ctrl-y</name>
 				<desc>Toggle Yaw Damper</desc>
@@ -494,11 +479,11 @@
             <float n="3" alias="engines/engine[0]/n1"/>
             <float n="4" alias="engines/engine[1]/n1"/>
             <float n="5" alias="fdm/jsbsim/aero/coefficient/CLalpha"/>
-            <float n="6" alias="/fdm/jsbsim/fcs/aileron-fbw-output"/>
+            <!--<float n="6" alias="/fdm/jsbsim/fcs/aileron-fbw-output"/>-->
             <float n="7" alias="surface-positions/flap-pos-norm"/>
             <float n="8" alias="controls/flight/elevator-trim"/>
-            <float n="9" alias="/fdm/jsbsim/fcs/elevator-fbw-output"/>
-            <float n="10" alias="/fdm/jsbsim/fcs/rudder-fbw-output"/>
+           <!-- <float n="9" alias="/fdm/jsbsim/fcs/elevator-fbw-output"/>-->
+           <!-- <float n="10" alias="/fdm/jsbsim/fcs/rudder-fbw-output"/>-->
             <float n="11" alias="surface-positions/speedbrake-pos-norm"/>
             <float n="12" alias="controls/switches/contrails"/>
             <float n="13" alias="gear/gear[0]/compression-norm"/>
@@ -539,7 +524,7 @@
 			<umax>0.50</umax>
 			<kp>-0.08</kp>
 			<ti>10.0</ti>
-			<td>0.0001</td>
+			<td>0.000001</td>
 			<kp-cws>-0.07</kp-cws>
 		</pitch>
 		<cmd>
@@ -549,12 +534,12 @@
 			<alt>0.03</alt>
 			<vs>0.10</vs>
 			<fpa>0.30</fpa>
-			<flch>-4.0</flch>
+			<flch>-3</flch>
 			<gs>0.11</gs>
 		</cmd>
 		<autoland>
-			<kp-roll>0.10</kp-roll>
-			<kp-pitch>0.07</kp-pitch>
+			<kp-roll>0.09</kp-roll>
+			<kp-pitch>0.06</kp-pitch>
 			<kp-rudder>-0.3</kp-rudder>
 		</autoland>
 	</config>
@@ -879,7 +864,7 @@
 					</script>
 				</binding>
 			</key>
-			<key n="6">
+			<!--<key n="6">
 				<name>Ctrl-f</name>
 				<desc>Toggle FBW Override</desc>
 				<repeatable type="bool">true</repeatable>
@@ -889,8 +874,8 @@
 					<value>0</value>
 					<value>1</value>
 				</binding>
-			</key>
-			<key n="25">
+			</key>-->
+			<!--<key n="25">
 				<name>Ctrl-y</name>
 				<desc>Toggle Yaw Damper</desc>
 				<repeatable type="bool">true</repeatable>
@@ -900,7 +885,7 @@
 					<value>0</value>
 					<value>1</value>
 				</binding>
-			</key>
+			</key>-->
 			<key n="119">
 				<name>w</name>
 				<desc>Walk forward toward view</desc>
@@ -1067,7 +1052,7 @@
 			<file>Aircraft/787-9/Nasal/mfd-navigation.nas</file>
 			<file>Aircraft/787-9/Nasal/nd-fullscreen.nas</file>
 			<file>Aircraft/787-9/Nasal/tcas.nas</file>
-			<file>Aircraft/787-9/Nasal/fbw.nas</file>
+			<!--<file>Aircraft/787-9/Nasal/fbw.nas</file>-->
 			<file>Aircraft/787-9/Nasal/vnav.nas</file>
 			<file>Aircraft/787-9/Nasal/efb.nas</file>
 			<file>Aircraft/787-9/Nasal/chartsDB.nas</file>
@@ -1098,20 +1083,23 @@
             <file>Aircraft/787-9/Nasal/radio.nas</file>
         </dialogs>
 <!-- Animations Creators -->
-		<helpers>
-<!--			<file>Aircraft/787-9/Devel/wxradar-echo-animations.nas</file>
+		<!--<helpers>
+			<file>Aircraft/787-9/Devel/wxradar-echo-animations.nas</file>
 			<file>Aircraft/787-9/Devel/wxradar-pixel-animations.nas</file>
-			<file>Aircraft/787-9/Devel/tcas-animations-helper.nas</file> -->
-			<!-- file>Aircraft/Instruments-3d/vsd/animation_creator.nas</file -->
-			<!-- file>Aircraft/787-9/parse_dat.nas</file -->
+			<file>Aircraft/787-9/Devel/tcas-animations-helper.nas</file>
+			<file>Aircraft/Instruments-3d/vsd/animation_creator.nas</file>
+			<file>Aircraft/787-9/parse_dat.nas</file>
 		</helpers>
 		<vsd>
-			<!-- file>Aircraft/787-9/Nasal/vsd.nas</file -->
-		</vsd>
+			<file>Aircraft/787-9/Nasal/vsd.nas</file>
+		</vsd>-->
 		<!--game in EFB; airline-specific modules go here, I guess?-->
 		<tps>
 			<file>Aircraft/787-9/EFB-DB/Third-Party/CatchMe/code.nas</file>
 		</tps>
+		<itaf>
+			<file>Aircraft/787-9/Nasal/it-autoflight.nas</file>
+		</itaf>
 	</nasal>
 
 </PropertyList>

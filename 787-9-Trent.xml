@@ -343,7 +343,8 @@
 
   <channel name="Pitch">
    <summer name="Pitch Trim Sum">
-      <input>fcs/elevator-fbw-output</input>
+      <input>fcs/elevator-cmd-norm</input>
+	  <!--<input>fcs/elevator-fbw-output</input>-->
       <input>fcs/pitch-trim-cmd-norm</input>
       <clipto>
         <min> -1 </min>
@@ -373,7 +374,8 @@
 
   <channel name="Roll">
    <summer name="Roll Trim Sum">
-      <input>fcs/aileron-fbw-output</input>
+      <input>fcs/aileron-cmd-norm</input>
+	  <!--<input>fcs/aileron-fbw-output</input>-->
       <input>fcs/roll-trim-cmd-norm</input>
       <clipto>
         <min> -1 </min>
@@ -429,7 +431,8 @@
 
   <channel name="Yaw">
    <summer name="Rudder Command Sum">
-      <input>fcs/rudder-fbw-output</input>
+        <input>fcs/rudder-cmd-norm</input>
+	  <!--<input>fcs/rudder-fbw-output</input>-->
       <input>fcs/yaw-trim-cmd-norm</input>
       <clipto>
         <min> -0.25 </min>

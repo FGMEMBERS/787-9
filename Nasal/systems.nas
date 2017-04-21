@@ -182,6 +182,7 @@ setlistener("sim/signals/fdm-initialized", func
   }, 2);
  });
 
+
 # startup/shutdown functions
 var startup = func
  {
@@ -304,3 +305,21 @@ setlistener("controls/gear/gear-down", func
   props.globals.getNode("controls/gear/gear-down").setBoolValue(1);
   }
  });
+
+ 
+ setlistener("/sim/signals/fdm-initialized", func {
+    itaf.ap_init();
+    var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/787-9/Systems/autopilot-dlg.xml");
+});
+
+var aglgears = func {
+    var agl = getprop("/position/altitude-agl-ft") or 0;
+    var aglft = agl - 13.7 ;  # is the position from the Aircraft above ground
+    var aglm = aglft * 0.3048;
+    setprop("/position/gear-agl-ft", aglft);
+    setprop("/position/gear-agl-m", aglm);
+
+    settimer(aglgears, 0.01);
+}
+
+aglgears();
