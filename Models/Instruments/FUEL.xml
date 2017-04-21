@@ -124,7 +124,7 @@
 
 	<animation>
 		<type>select</type>
-		<object-name>rtank</object-name>
+		<object-name>ctank</object-name>
 		<condition>
 				<property>consumables/fuel/tank[2]/selected</property>
 		</condition>
@@ -132,7 +132,7 @@
 
 	<animation>
 		<type>select</type>
-		<object-name>ctank</object-name>
+		<object-name>rtank</object-name>
 		<condition>
 				<property>consumables/fuel/tank[1]/selected</property>
 		</condition>

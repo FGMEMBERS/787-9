@@ -23,11 +23,11 @@ refs 4
 kids 0
 OBJECT group
 name "fuel"
-loc 8.77935e-05 -0.0148432 -0.0760776
+loc 8.77935e-005 -0.0148432 -0.0760776
 kids 11
 OBJECT group
 name "ldump"
-loc 3.93055e-05 0.00445693 0.118117
+loc 3.93055e-005 0.00445693 0.118117
 kids 1
 OBJECT poly
 name "lnozzle"
@@ -50,7 +50,7 @@ refs 4
 kids 0
 OBJECT group
 name "rdump"
-loc 3.93055e-05 0.00429482 0.0111235
+loc 3.93055e-005 0.00429482 0.0111235
 kids 1
 OBJECT poly
 name "rnozzle"
@@ -73,7 +73,7 @@ refs 4
 kids 0
 OBJECT group
 name "xfeed"
-loc 3.93055e-05 0.00616647 0.0312796
+loc 3.93055e-005 0.00616647 0.0312796
 kids 1
 OBJECT poly
 name "xfeed"
@@ -96,7 +96,7 @@ refs 4
 kids 0
 OBJECT group
 name "xfeed"
-loc 3.93055e-05 0.0231071 0.0311986
+loc 3.93055e-005 0.0231071 0.0311986
 kids 1
 OBJECT poly
 name "xfeed"
@@ -119,10 +119,10 @@ refs 4
 kids 0
 OBJECT group
 name "fuel.c"
-loc 3.93055e-05 -0.0221512 -0.00207794
+loc 3.93055e-005 -0.0221512 -0.00207794
 kids 1
 OBJECT poly
-name "extpwr"
+name "ctank"
 loc 0 0.0114049 0.0473391
 texture "fuel.png"
 crease 45.000000
@@ -142,10 +142,10 @@ refs 4
 kids 0
 OBJECT group
 name "fuel.c"
-loc 3.93055e-05 -0.0223496 0.0157848
+loc 3.93055e-005 -0.0223496 0.0157848
 kids 1
 OBJECT poly
-name "extpwr"
+name "ctank"
 loc 0 0.0114049 0.0473391
 texture "fuel.png"
 crease 45.000000
@@ -165,7 +165,7 @@ refs 4
 kids 0
 OBJECT group
 name "fuel.r"
-loc 3.93055e-05 0.0032102 -0.0607187
+loc 3.93055e-005 0.0032102 -0.0607187
 kids 1
 OBJECT poly
 name "rtank"
@@ -188,7 +188,7 @@ refs 4
 kids 0
 OBJECT group
 name "fuel.r"
-loc 3.93055e-05 0.0199255 -0.0607187
+loc 3.93055e-005 0.0199255 -0.0607187
 kids 1
 OBJECT poly
 name "rtank"
@@ -211,7 +211,7 @@ refs 4
 kids 0
 OBJECT group
 name "fuel.l"
-loc 3.93055e-05 0.00321019 0.0745334
+loc 3.93055e-005 0.00321019 0.0745334
 kids 1
 OBJECT poly
 name "ltank"
@@ -234,7 +234,7 @@ refs 4
 kids 0
 OBJECT group
 name "fuel.l"
-loc 3.93055e-05 0.0199255 0.0745334
+loc 3.93055e-005 0.0199255 0.0745334
 kids 1
 OBJECT poly
 name "ltank"

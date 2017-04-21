@@ -42,7 +42,7 @@ var eng2icesetting = getprop("/controls/ice/eng2/anti-ice-setting");
 
 var AutoAntiIce = func(part) {
 
-var AntiIce = getprop("/controls/" ~ part ~ "/anti-ice");
+var AntiIce = getprop("/controls/ice/" ~ part ~ "/anti-ice");
 var Temp = getprop("/controls/ice/" ~ part ~ "/temp");
 
 if (Temp <= -10) {
