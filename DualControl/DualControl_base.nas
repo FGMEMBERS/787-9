@@ -6,7 +6,8 @@
 ###############################################################################
 
 # Renaming (almost :)
-var DCT = dual_control_tools;
+#var DCT = dual_control_tools;
+#Disabled the DCT part, as FlightGear has no idea what dual_control_tools is
 
 ######################################################################
 # Pilot/copilot aircraft identifiers. Used by dual_control.
@@ -65,7 +66,7 @@ var pilot_connect_copilot = func (copilot) {
         [
 			##################################################
 			# Set up TDM transmission of slow state properties.
-			DCT.TDMEncoder.new
+			dual_control_tools.TDMEncoder.new
 			(propertyArray,
 			props.globals.getNode(pilot_TDM1_mpp),
 			),
@@ -81,7 +82,7 @@ var copilot_connect_pilot = func (pilot) {
         [
 		##################################################
          # Set up TDM reception of slow state properties.
-			DCT.TDMDecoder.new
+			dual_control_tools.TDMDecoder.new
 			(pilot.getNode(pilot_TDM1_mpp),
 			[
 			func (v) {
