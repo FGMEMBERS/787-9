@@ -43,41 +43,55 @@ var eng2icesetting = getprop("/controls/ice/eng2/anti-ice-setting");
 
 # Initialize Auto Anti-Ice Control System
 
-var AutoAntiIce = func(part) {
+var AutoAntiIce = func() {
+var wingicesetting = getprop("/controls/ice/wing/anti-ice-setting");
+var eng1icesetting = getprop("/controls/ice/eng1/anti-ice-setting");
+var eng2icesetting = getprop("/controls/ice/eng2/anti-ice-setting");
 
-var AntiIce = getprop("/controls/ice/" ~ part ~ "/anti-ice");
-var Temp = getprop("/controls/ice/" ~ part ~ "/temp");
 
-if (Temp <= -10) {
-setprop(AntiIce,1);
-} else {
-setprop(AntiIce,0);
-}
-};
 
 if (wingicesetting == 0) {
-setprop("/controls/ice/wing/anti-ice", 0);
-} elsif (wingicesetting == 1) {
-AutoAntiIce("wing");
+	setprop("/controls/ice/wing/anti-ice", 0);
+} else if (wingicesetting == 1) {
+	var AntiIceWing = getprop("/controls/ice/wing/anti-ice");
+	var TempWing = getprop("/controls/ice/wing/temp");
+	if (TempWing <= -10) {
+		setprop(AntiIceWing,1);
+	} else {
+		setprop(AntiIceWing,0);
+	}
 } else {
-setprop("/controls/ice/wing/anti-ice", 1);
+	setprop("/controls/ice/wing/anti-ice", 1);
 }
 
 if (eng1icesetting == 0) {
-setprop("/controls/ice/eng1/anti-ice", 0);
-} elsif (eng1icesetting == 1) {
-AutoAntiIce("eng1");
+	setprop("/controls/ice/eng1/anti-ice", 0);
+} else if (eng1icesetting == 1) {
+	var AntiIceEng1 = getprop("/controls/ice/eng1/anti-ice");
+	var TempEng1 = getprop("/controls/ice/eng1/temp");
+	if (TempEng1 <= -10) {
+		setprop(AntiIceEng1,1);
+	} else {
+		setprop(AntiIceEng1,0);
+	}
 } else {
 setprop("/controls/ice/eng1/anti-ice", 1);
 }
 
 if (eng2icesetting == 0) {
-setprop("/controls/ice/eng2/anti-ice", 0);
-} elsif (eng2icesetting == 1) {
-AutoAntiIce("eng2");
+	setprop("/controls/ice/eng2/anti-ice", 0);
+} else if (eng2icesetting == 1) {
+	var AntiIceEng2 = getprop("/controls/ice/eng2/anti-ice");
+	var TempEng2 = getprop("/controls/ice/eng2/temp");
+	if (TempEng2 <= -10) {
+		setprop(AntiIceEng2,1);
+	} else {
+		setprop(AntiIceEng2,0);
+	}
 } else {
-setprop("/controls/ice/eng2/anti-ice", 1);
+	setprop("/controls/ice/eng2/anti-ice", 1);
 }
+};
 
 # Wing Ice
 
