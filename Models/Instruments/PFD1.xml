@@ -620,15 +620,15 @@
 	<object-name>FD.roll</object-name>
 	<object-name>FD.pitch</object-name>
   	<condition>
-    	<property>autopilot/flightdirector</property>
+    	<property>/it-autoflight/input/fd1</property>
   	</condition>
 </animation>
 
     <animation>
         <type>translate</type>
         <object-name>FD.roll</object-name>
-        <property>/autopilot/internal/target-roll-deg</property>
-        <factor>0.0020222222</factor>
+        <property>/it-autoflight/fd/roll-bar</property>
+        <factor>0.0006</factor>
         <axis>
             <x>0</x>
             <y>1</y>
@@ -639,8 +639,8 @@
     <animation>
         <type>translate</type>
         <object-name>FD.pitch</object-name>
-        <property>/autopilot/internal/climb-rate-difference</property>
-        <factor>0.0010222222</factor>
+        <property>/it-autoflight/fd/pitch-bar</property>
+        <factor>0.0001</factor>
         <axis>
             <x>0</x>
             <y>0</y>

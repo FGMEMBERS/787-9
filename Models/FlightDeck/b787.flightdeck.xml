@@ -2478,8 +2478,8 @@
 		<object-name>APiasind</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/speed-mode</property>
-				<value>ias</value>
+				<property>/it-autoflight/input/kts-mach</property>
+				<value>0</value>
 			</equals>
 		</condition>
 	</animation>
@@ -2492,8 +2492,8 @@
 		<object-name>APmachind</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/speed-mode</property>
-				<value>mach</value>
+				<property>/it-autoflight/input/kts-mach</property>
+				<value>1</value>
 			</equals>
 		</condition>
 	</animation>
@@ -2501,7 +2501,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>APias.100</object-name>
-   <property>autopilot/settings/target-speed-kt</property>
+   <property>/it-autoflight/input/spd-kts</property>
    <factor>0.001</factor>
    <step>100</step>
    <axis>
@@ -2514,7 +2514,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>APias.10</object-name>
-   <property>autopilot/settings/target-speed-kt</property>
+   <property>/it-autoflight/input/spd-kts</property>
    <factor>0.01</factor>
    <step>10</step>
    <axis>
@@ -2527,7 +2527,7 @@
    <animation>
    <type>textranslate</type>
    <object-name>APias.1</object-name>
-   <property>autopilot/settings/target-speed-kt</property>
+   <property>/it-autoflight/input/spd-kts</property>
    <factor>0.1</factor>
    <step>1</step>
    <axis>
@@ -2540,7 +2540,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>APmach.1</object-name>
-   <property>autopilot/settings/mach-speed</property>
+   <property>/it-autoflight/input/spd-mach</property>
    <factor>0.1</factor>
    <step>1</step>
    <axis>
@@ -2553,7 +2553,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>APmach.0.1</object-name>
-   <property>autopilot/settings/mach-speed</property>
+   <property>/it-autoflight/input/spd-mach</property>
    <factor>1</factor>
    <step>0.1</step>
    <axis>
@@ -2566,7 +2566,7 @@
    <animation>
    <type>textranslate</type>
    <object-name>APmach.0.01</object-name>
-   <property>autopilot/settings/mach-speed</property>
+   <property>/it-autoflight/input/spd-mach</property>
    <factor>10</factor>
    <step>0.01</step>
    <axis>
@@ -2579,7 +2579,7 @@
    <animation>
    <type>textranslate</type>
    <object-name>APhdg.100</object-name>
-   <property>autopilot/settings/heading-bug-deg</property>
+   <property>/it-autoflight/input/hdg</property>
    <factor>0.001</factor>
    <step>100</step>
    <axis>
@@ -2592,7 +2592,7 @@
    <animation>
    <type>textranslate</type>
    <object-name>APhdg.10</object-name>
-   <property>autopilot/settings/heading-bug-deg</property>
+   <property>/it-autoflight/input/hdg</property>
    <factor>0.01</factor>
    <step>10</step>
    <axis>
@@ -2605,7 +2605,7 @@
    <animation>
    <type>textranslate</type>
    <object-name>APhdg.1</object-name>
-   <property>autopilot/settings/heading-bug-deg</property>
+   <property>/it-autoflight/input/hdg</property>
    <factor>0.1</factor>
    <step>1</step>
    <axis>
@@ -2618,7 +2618,7 @@
     <animation>
    <type>textranslate</type>
    <object-name>APalt.10000</object-name>
-   <property>autopilot/settings/target-altitude-ft</property>
+   <property>/it-autoflight/input/alt</property>
    <factor>0.00001</factor>
    <step>10000</step>
    <axis>
@@ -2631,7 +2631,7 @@
     <animation>
    <type>textranslate</type>
    <object-name>APalt.1000</object-name>
-   <property>autopilot/settings/target-altitude-ft</property>
+   <property>/it-autoflight/input/alt</property>
    <factor>0.0001</factor>
    <step>1000</step>
    <axis>
@@ -2644,7 +2644,7 @@
     <animation>
    <type>textranslate</type>
    <object-name>APalt.100</object-name>
-   <property>autopilot/settings/target-altitude-ft</property>
+   <property>/it-autoflight/input/alt</property>
    <factor>0.001</factor>
    <step>100</step>
    <axis>
@@ -2657,7 +2657,7 @@
     <animation>
    <type>textranslate</type>
    <object-name>APalt.10</object-name>
-   <property>autopilot/settings/target-altitude-ft</property>
+   <property>/it-autoflight/input/alt</property>
    <factor>0.01</factor>
    <step>10</step>
    <axis>
@@ -2670,7 +2670,7 @@
     <animation>
    <type>textranslate</type>
    <object-name>APalt.1</object-name>
-   <property>autopilot/settings/target-altitude-ft</property>
+   <property>/it-autoflight/input/alt</property>
    <factor>0.1</factor>
    <step>1</step>
    <axis>
@@ -2685,7 +2685,7 @@
    <object-name>APvsnegative</object-name>
    <condition>
    <less-than>
-   <property>autopilot/settings/vertical-speed-fpm</property>
+   <property>/it-autoflight/input/vs</property>
    <value>0</value>
    </less-than>
    </condition>
@@ -2694,7 +2694,7 @@
 <animation>
    <type>textranslate</type>
    <object-name>APvs.1000</object-name>
-   <property>autopilot/panel/disp-vs</property>
+   <property>/it-autoflight/input/vs</property>
    <factor>0.0001</factor>
    <step>1000</step>
    <axis>
@@ -2707,7 +2707,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>APvs.100</object-name>
-   <property>autopilot/panel/disp-vs</property>
+   <property>/it-autoflight/input/vs</property>
    <factor>0.001</factor>
    <step>100</step>
    <axis>
@@ -2720,7 +2720,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>APvs.10</object-name>
-   <property>autopilot/panel/disp-vs</property>
+   <property>/it-autoflight/input/vs</property>
    <factor>0.01</factor>
    <step>10</step>
    <axis>
@@ -2733,7 +2733,7 @@
  <animation>
    <type>textranslate</type>
    <object-name>APvs.1</object-name>
-   <property>autopilot/panel/disp-vs</property>
+   <property>/it-autoflight/input/vs</property>
    <factor>0.1</factor>
    <step>1</step>
    <axis>
@@ -2750,7 +2750,11 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>/autopilot/flightdirector</property>
+                <property>/it-autoflight/input/fd1</property>
+            </binding>
+			<binding>
+                <command>property-toggle</command>
+                <property>/it-autoflight/input/fd2</property>
             </binding>
         </action>
     </animation>
@@ -2763,7 +2767,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>/autopilot/panel/master</property>
+                <property>/it-autoflight/input/ap1</property>
             </binding>
         </action>
     </animation>
@@ -2776,7 +2780,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>/autopilot/panel/auto-throttle</property>
+                <property>/it-autoflight/input/athr</property>
             </binding>
         </action>
     </animation>
@@ -2788,9 +2792,9 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/speed-mode</property>
-				<value>ias</value>
-				<value>mach</value>
+                <property>/it-autoflight/input/kts-mach</property>
+				<value>0</value>
+				<value>1</value>
             </binding>
         </action>
     </animation>
@@ -2827,14 +2831,14 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/hdg</property>
-				<value>lnav</value>
+                <property>/it-autoflight/input/lat</property>
+				<value>1</value>
 				<value></value>
             </binding>
         </action>
     </animation>
 
-    <animation>
+	<!--<animation>
         <type>pick</type>
         <object-name>APvnav</object-name>
         <object-name>VNAV.toggle</object-name>
@@ -2842,12 +2846,12 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/alt</property>
-				<value>vnav</value>
+                <property>/it-autoflight/input/vert</property>
+				<value>8</value>
 				<value></value>
             </binding>
         </action>
-    </animation>
+    </animation>-->
 
 
     <animation>
@@ -2858,8 +2862,8 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/hdg</property>
-				<value>hdg</value>
+                <property>/it-autoflight/input/lat</property>
+				<value>3</value>
 				<value></value>
             </binding>
         </action>
@@ -2873,8 +2877,8 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/alt</property>
-				<value>vs</value>
+                <property>/it-autoflight/input/vert</property>
+				<value>1</value>
 				<value></value>
             </binding>
         </action>
@@ -2888,8 +2892,8 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/alt</property>
-				<value>alt</value>
+                <property>/it-autoflight/input/vert</property>
+				<value>4</value>
 				<value></value>
             </binding>
         </action>
@@ -2902,16 +2906,15 @@
         <action>
             <button>0</button>
             <binding>
-                <command>nasal</command>
- 				<script>
- 					setprop("/autopilot/settings/target-altitude-ft", getprop("/instrumentation/altimeter/indicated-altitude-ft"));
- 					setprop("/autopilot/panel/alt", "alt");
- 				</script>
+                <command>property-cycle</command>
+ 				<property>/it-autoflight/input/vert</property>
+				<value>0</value>
+				<value></value>
             </binding>
         </action>
     </animation>
     
-    <animation>
+    <!--<animation>
         <type>pick</type>
         <object-name>clb.con</object-name>
         <action>
@@ -2925,7 +2928,7 @@
  				</script>
             </binding>
         </action>
-    </animation>
+    </animation>-->
 
     <animation>
         <type>pick</type>
@@ -2935,8 +2938,8 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/hdg</property>
-				<value>loc</value>
+                <property>/it-autoflight/input/lat</property>
+				<value>2</value>
 				<value></value>
             </binding>
         </action>
@@ -2950,8 +2953,8 @@
             <button>0</button>
             <binding>
                 <command>property-cycle</command>
-                <property>/autopilot/panel/alt</property>
-				<value>app</value>
+                <property>/it-autoflight/input/vert</property>
+				<value>2</value>
 				<value></value>
             </binding>
         </action>
@@ -2961,7 +2964,7 @@
 		<type>select</type>
 		<object-name>AP.toggle</object-name>
 		<condition>
-			<property>/autopilot/panel/master</property>
+			<property>/it-autoflight/input/ap1</property>
 		</condition>
 	</animation>
 
@@ -2970,8 +2973,8 @@
 		<object-name>APP.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt</property>
-				<value>app</value>
+				<property>/it-autoflight/input/vert</property>
+				<value>2</value>
 			</equals>
 		</condition>
 	</animation>
@@ -2981,8 +2984,8 @@
 		<object-name>LOC.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/hdg</property>
-				<value>loc</value>
+				<property>/it-autoflight/input/lat</property>
+				<value>2</value>
 			</equals>
 		</condition>
 	</animation>
@@ -2992,8 +2995,8 @@
 		<object-name>ALT.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt-ind</property>
-				<value>hold</value>
+				<property>/it-autoflight/input/vert</property>
+				<value>0</value>
 			</equals>
 		</condition>
 	</animation>
@@ -3003,8 +3006,8 @@
 		<object-name>FLCH.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt-ind</property>
-				<value>flch</value>
+				<property>/it-autoflight/input/vert</property>
+				<value>4</value>
 			</equals>
 		</condition>
 	</animation>
@@ -3014,8 +3017,8 @@
 		<object-name>HDG.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/hdg</property>
-				<value>hdg</value>
+				<property>/it-autoflight/input/lat</property>
+				<value>3</value>
 			</equals>
 		</condition>
 	</animation>
@@ -3025,8 +3028,8 @@
 		<object-name>VS.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt</property>
-				<value>vs</value>
+				<property>/it-autoflight/input/vert</property>
+				<value>1</value>
 			</equals>
 		</condition>
 	</animation>
@@ -3036,28 +3039,28 @@
 		<object-name>LNAV.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/hdg</property>
-				<value>lnav</value>
+				<property>/it-autoflight/input/lat</property>
+				<value>1</value>
 			</equals>
 		</condition>
 	</animation>
 
-	<animation>
+	<!--<animation>
 		<type>select</type>
 		<object-name>VNAV.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/autopilot/panel/alt</property>
-				<value>vnav</value>
+				<property>/it-autoflight/input/vert</property>
+				<value>8</value>
 			</equals>
 		</condition>
-	</animation>
+	</animation>-->
 
 	<animation>
 		<type>select</type>
 		<object-name>AT.toggle</object-name>
 		<condition>
-			<property>/autopilot/panel/auto-throttle</property>
+			<property>/it-autoflight/input/athr</property>
 		</condition>
 	</animation>
 
@@ -3068,23 +3071,41 @@
 		<object-name>ALT.knob</object-name>
 		<action>
 			<button>0</button>
-			<button>3</button>
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/target-altitude-ft</property>
-				<step>500</step>
+				<property>/it-autoflight/input/alt</property>
+				<step>100</step>
 				<max>50000</max>
 			</binding>
 		</action>
 		<action>
 			<button>1</button>
+			<repeatable type="bool">true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>/it-autoflight/input/alt</property>
+				<step>-100</step>
+				<min>0</min>
+			</binding>
+		</action>
+		<action>
+			<button>3</button>
+			<repeatable type="bool">true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>/it-autoflight/input/alt</property>
+				<step>1000</step>
+				<max>50000</max>
+			</binding>
+		</action>
+		<action>
 			<button>4</button>
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/target-altitude-ft</property>
-				<step>-500</step>
+				<property>/it-autoflight/input/alt</property>
+				<step>-1000</step>
 				<min>0</min>
 			</binding>
 		</action>
@@ -3101,7 +3122,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/vertical-speed-fpm</property>
+				<property>/it-autoflight/input/vs</property>
 				<step>100</step>
 				<max>3000</max>
 			</binding>
@@ -3112,7 +3133,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/vertical-speed-fpm</property>
+				<property>/it-autoflight/input/vs</property>
 				<step>-100</step>
 				<min>-3000</min>
 			</binding>
@@ -3130,7 +3151,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/heading-bug-deg</property>
+				<property>/it-autoflight/input/hdg</property>
 				<wrap type="bool">true</wrap>
         <step>1</step>
         <min>0</min>
@@ -3143,7 +3164,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/autopilot/settings/heading-bug-deg</property>
+				<property>/it-autoflight/input/hdg</property>
 				<wrap type="bool">true</wrap>
         <step>-1</step>
         <min>0</min>
@@ -3165,11 +3186,11 @@
 				<command>property-adjust</command>
 				<condition>
 					<equals>
-						<property>autopilot/panel/speed-mode</property>
-						<value>ias</value>
+						<property>/it-autoflight/input/kts-mach</property>
+						<value>0</value>
 					</equals>
 				</condition>
-				<property>/autopilot/settings/target-speed-kt</property>
+				<property>/it-autoflight/input/spd-kts</property>
 				<step>1</step>
 				<max>350</max>
 			</binding>
@@ -3177,11 +3198,11 @@
 				<command>property-adjust</command>
 				<condition>
 					<equals>
-						<property>autopilot/panel/speed-mode</property>
+						<property>/it-autoflight/input/kts-mach</property>
 						<value>mach</value>
 					</equals>
 				</condition>
-				<property>/autopilot/settings/mach-speed</property>
+				<property>/it-autoflight/input/spd-mach</property>
 				<step>0.01</step>
 				<max>1</max>
 			</binding>
@@ -3194,11 +3215,11 @@
 				<command>property-adjust</command>
 				<condition>
 					<equals>
-						<property>autopilot/panel/speed-mode</property>
-						<value>ias</value>
+						<property>/it-autoflight/input/kts-mach</property>
+						<value>0</value>
 					</equals>
 				</condition>
-				<property>/autopilot/settings/target-speed-kt</property>
+				<property>/it-autoflight/input/spd-kts</property>
 				<step>-1</step>
 				<min>0</min>
 			</binding>
@@ -3206,11 +3227,11 @@
 				<command>property-adjust</command>
 				<condition>
 					<equals>
-						<property>autopilot/panel/speed-mode</property>
+						<property>/it-autoflight/input/kts-mach</property>
 						<value>mach</value>
 					</equals>
 				</condition>
-				<property>/autopilot/settings/mach-speed</property>
+				<property>/it-autoflight/input/spd-mach</property>
 				<step>-0.01</step>
 				<min>0</min>
 			</binding>
@@ -3220,7 +3241,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>FD.toggle</object-name>
-		<property>/autopilot/flightdirector</property>
+		<property>/it-autoflight/input/fd1</property>
 		<factor>45</factor>
 		<axis>
 			<x>0</x>
@@ -3234,7 +3255,7 @@
 		</center>
 	</animation>
 
-<!-- Throttle Arms -->
+<!-- Throttle Arms
 
 	<animation>
 		<type>rotate</type>
@@ -3267,7 +3288,7 @@
 			<y-m>0</y-m>
 			<z-m>1.9843</z-m>
 		</center>
-	</animation>
+	</animation>-->
 
 	<animation>
 		<type>select</type>
