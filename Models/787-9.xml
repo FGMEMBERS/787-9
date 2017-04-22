@@ -2932,7 +2932,7 @@
 	</condition>
 </animation> 
 
-<!-- Window Lights -->
+<!-- Window Lights
 
 <animation>
 	<type>select</type>
@@ -2943,7 +2943,7 @@
 	        <value>1.57</value>
      	</greater-than-equals>
 	</condition>
-</animation>
+</animation>  -->
 
 <!-- Smoke and Fire -->
 

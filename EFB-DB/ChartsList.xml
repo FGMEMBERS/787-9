@@ -19,7 +19,25 @@
 		<IAP-4 type="string">20R-ILS</IAP-4>
 		<IAPs type="int">5</IAPs>
 	</WSSS>
-
+	
+	<SVMI>
+		<SID-0 type="string">CONV-SID</SID-0>
+		<SID-1 type="string">CONV-SID28</SID-1>
+		<SID-2 type="string">RADV</SID-2>
+		<SID-3 type="string">TOPIK1-28</SID-3>
+		<SID-4 type="string">VAGEL1-09-10</SID-4>
+		<SIDs type="int">5</SIDs>
+		<IAP-0 type="string">ILSDME10</IAP-0>
+		<IAP-1 type="string">NDB-C</IAP-1>
+		<IAP-2 type="string">VOR-B</IAP-2>
+		<IAP-3 type="string">RADV</IAP-3>
+		<IAP-4 type="string">RNAV-10</IAP-4>
+		<IAP-5 type="string">RNAV-10Z</IAP-5>
+		<IAP-6 type="string">RNAV-28</IAP-6>
+		<IAP-7 type="string">RNAV-28Z</IAP-7>
+		<IAP-8 type="string">VORDME10</IAP-8>
+		<IAPs type="int">9</IAPs>
+	</SVMI>
 	<!--due to licencing concerns, there are no charts included. Feel free to add your own in the format as above-->
 
 </chartsDB>
