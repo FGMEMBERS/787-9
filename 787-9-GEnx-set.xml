@@ -295,7 +295,7 @@
                     </item>
                 </menu>
                 <menu n="5">
-                    <item n="1">
+                    <item n="5">
                     <label>Radio Stack</label>
                         <binding>
                             <command>nasal</command>

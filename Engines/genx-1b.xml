@@ -15,7 +15,7 @@
   <milthrust> 69400.0 </milthrust>
   <bypassratio>     11 </bypassratio>
   <tsfc>            0.8 </tsfc>
-  <bleed>           0.03</bleed>
+  <bleed>           0</bleed> <!-- no pneumatics -->
   <idlen1>         30.0 </idlen1>
   <idlen2>         60.0 </idlen2>
   <maxn1>         100.0 </maxn1>

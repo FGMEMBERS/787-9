@@ -766,10 +766,10 @@
 
 <!-- END OF FUEL SYSTEM CONTROL PANEL -->
 
-<!-- PNEUMATICS CONTROL PANEL -->
+<!-- AIR COND CONTROL PANEL -->
 
 <!-- Equipment Cooling and Gasper -->
-
+	
 	<animation>
 		<type>pick</type>
 		<object-name>equip.cooling</object-name>
@@ -829,9 +829,6 @@
 				<script>
 				setprop("/controls/pneumatic/pack1", 1);
 				setprop("/controls/pneumatic/pack2", 1);
-				setprop("/controls/pneumatic/e1-bleed", 1);
-				setprop("/controls/pneumatic/e2-bleed", 1);
-				setprop("/controls/pneumatic/apu-bleed", 0);
 				setprop("/controls/pneumatic/triml", 0);
 				setprop("/controls/pneumatic/trimr", 0);
 				</script>
@@ -935,7 +932,7 @@
 		</axis>
 	</animation>
 
-	<animation>
+	<!--<animation> 787 has no pneumatics
 		<type>pick</type>
 		<object-name>bleed.1</object-name>
 		<action>
@@ -1005,7 +1002,7 @@
 			<y>1</y>
 			<z>0</z>
 		</axis>
-	</animation>
+	</animation>-->
 
 <!-- END OF PNEUMATICS CONTROL PANEL -->
 
