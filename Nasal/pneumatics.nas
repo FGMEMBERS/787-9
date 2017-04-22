@@ -14,8 +14,7 @@ setprop("/controls/pneumatic/equip-cooling", 1);
 
 # Initialize by starting up Engine Bleeds and Pack 1
 
-setprop("/controls/pneumatic/e1-bleed", 1);
-setprop("/controls/pneumatic/e2-bleed", 1);
+
 setprop("/controls/pneumatic/pack1", 1);
 
 setprop("/controls/pneumatic/equipcooling", 1);
@@ -87,31 +86,12 @@ coolingeffect = coolingeffect + 2;
 # Pack 1 and 2 Cooling Effects
 
 if (getprop("/controls/pneumatic/pack1") == 1) {
-
-if ((getprop("/controls/pneumatic/e1-bleed") == 1) and (getprop("/engines/engine/n2") >= 30)) {
 coolingeffect = coolingeffect + 3;
 }
-if ((getprop("/controls/pneumatic/e2-bleed") == 1) and (getprop("/engines/engine[1]/n2") >= 30)) {
-coolingeffect = coolingeffect + 3;
-}
-if ((getprop("/controls/pneumatic/apu-bleed") == 1) and (getprop("engines/APU/running") == 1)) {
-coolingeffect = coolingeffect + 2;
-}
 
-}
 
 if (getprop("/controls/pneumatic/pack2") == 1) {
-
-if ((getprop("/controls/pneumatic/e1-bleed") == 1) and (getprop("/engines/engine/n2") >= 30)) {
 coolingeffect = coolingeffect + 3;
-}
-if ((getprop("/controls/pneumatic/e2-bleed") == 1) and (getprop("/engines/engine[1]/n2") >= 30)) {
-coolingeffect = coolingeffect + 3;
-}
-if ((getprop("/controls/pneumatic/apu-bleed") == 1) and (getprop("engines/APU/running") == 1)) {
-coolingeffect = coolingeffect + 2;
-}
-
 }
 
 # Cool All Electric, Engine and Fuel Pumps according to Cooling Effect
@@ -168,5 +148,5 @@ setprop("/controls/pneumatic/temp/fuel-pump-right", tempfuelpumpright);
 setlistener("sim/signals/fdm-initialized", func
  {
  pneumatic.init();
- print("Pneumatic System .... Initialized");
+ print("Air Conditioning System .... Initialized");
  });

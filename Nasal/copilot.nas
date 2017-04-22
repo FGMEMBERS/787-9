@@ -265,21 +265,6 @@ setprop("/controls/ice/wing/anti-ice", 0);
 if (getprop("/controls/switches/copilot/pneu") == 1) {
 setprop("controls/pressurization/pack[0]/pack-on", 1);
 setprop("controls/pressurization/pack[1]/pack-on", 1);
-if (getprop("/engines/APU/running") == 1) {
-setprop("controls/pneumatic/APU-bleed",1);
-} else {
-setprop("controls/pneumatic/APU-bleed",0);
-}
-if (getprop("/engines/engine/running") == 1) {
-setprop("controls/pneumatic/engine/bleed",1);
-} else {
-setprop("controls/pneumatic/engine/bleed",0);
-}
-if (getprop("/engines/engine[1]/running") == 1) {
-setprop("controls/pneumatic/engine[1]/bleed",1);
-} else {
-setprop("controls/pneumatic/engine[1]/bleed",0);
-}
 }
 
 # Control Altimeter

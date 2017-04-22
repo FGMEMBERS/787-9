@@ -292,7 +292,7 @@
                     </item>
                 </menu>
                 <menu n="5">
-                    <item n="1">
+                    <item n="5">
                     <label>Radio Stack</label>
                         <binding>
                             <command>nasal</command>
@@ -302,7 +302,7 @@
                 </menu>
 				<menu n="100">
 					<label>Boeing 787-9</label>
-<enabled type="bool">true</enabled>
+					<enabled type="bool">true</enabled>
 					<item>
 						<name>autostart</name>
 						<label>Autostart Aircraft Engines</label>
