@@ -304,7 +304,7 @@
                     </item>
                 </menu>
 				<menu n="100">
-					<label>Boeing 787-8</label>
+					<label>Boeing 787-9</label>
 <enabled type="bool">true</enabled>
 					<item>
 						<name>autostart</name>
@@ -838,7 +838,7 @@
 				<volume type="double">0.4</volume>
 			</speaker>
 			<voice>
-				<file-prefix>Sounds/mk-viii/</file-prefix>
+				<file-prefix>Aircraft/787-9/Sounds/GPWS/</file-prefix>
 			</voice>
 		</mk-viii>
 	</instrumentation>
