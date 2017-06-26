@@ -976,6 +976,29 @@
         <max-dist>1.0</max-dist>
     </stall>
 
+	<egpws>
+		<name>alt2500</name>
+		<mode>once</mode>
+		<path>Aircraft/787-9/Sounds/GPWS/altitude-2500.wav</path>
+		<condition>
+			<less-than>
+				<property>/position/altitude-agl-ft</property>
+				<value>2500</value>
+			</less-than>
+		</condition>
+		<volume>
+			<factor>100</factor>
+		</volume>
+		<position>
+			<x>0</x>
+			<y>0</y>
+			<z>0</z>
+		</position>
+		<reference-dist>10.0</reference-dist>
+		<max-dist>100</max-dist>
+	</egpws>
+
+
     <speedbrake>
         <name>speedbrake</name>
         <mode>in-transit</mode>
