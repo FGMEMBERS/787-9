@@ -282,18 +282,6 @@
 
 		<menubar>
 			<default>
-                <menu n="3">
-                    <item n="0">
-                    <label>Autopilot Dialog</label>
-                        <binding>
-							<command>nasal</command>
-							<script>
-							 var ap_dialog = gui.Dialog.new("sim/gui/dialogs/ap_dialog/dialog", "Aircraft/787-9/Systems/autopilot-dlg.xml");
-							 ap_dialog.open();
-							</script>
-                        </binding>
-                    </item>
-                </menu>
                 <menu n="5">
                     <item n="5">
                     <label>Radio Stack</label>
@@ -509,52 +497,44 @@
 
 	</sim>
 	
-	<it-autoflight>
+<it-autoflight>
 	<config>
 		<roll>
-			<umin>-0.50</umin>
-			<umax>0.50</umax>
+			<umin>-0.40</umin>
+			<umax>0.40</umax>
 			<kp>0.05</kp>
-			<kp-vloc>0.09</kp-vloc>
-			<ti>10.0</ti>
+			<kp-vloc>0.06</kp-vloc>
+			<ti>5.0</ti>
 			<td>0.00001</td>
-			<kp-cws>0.09</kp-cws>
 		</roll>
 		<pitch>
 			<umin>-0.50</umin>
 			<umax>0.50</umax>
-			<kp>-0.10</kp>
+			<kp>-0.09</kp>
 			<ti>5.0</ti>
-			<td>0.000001</td>
-			<kp-cws>-0.07</kp-cws>
+			<td>0.0001</td>
 		</pitch>
 		<cmd>
-			<roll-kp>-1.2</roll-kp>
-			<roll-scale>2.0</roll-scale>
-			<vorloc>-4.5</vorloc>
-			<alt>0.03</alt>
-			<vs>0.10</vs>
-			<fpa>0.30</fpa>
-			<flch>-3.5</flch>
-			<gs>0.11</gs>
+			<roll-kp>-1.1</roll-kp>
+			<roll-scale>1.2</roll-scale>
+			<vorloc>-2.0</vorloc>
+			<vs>0.01</vs>
 		</cmd>
 		<autoland>
-			<kp-roll>0.09</kp-roll>
-			<kp-pitch>0.06</kp-pitch>
-			<kp-rudder>-0.3</kp-rudder>
+			<kp-pitch>0.03</kp-pitch>
+			<kp-rudder>-0.1</kp-rudder>
 		</autoland>
 	</config>
 	<settings>
-		<default-bank-limit>30</default-bank-limit> <!-- Set the Default Bank Limit -->
-		<enable-cws>0</enable-cws> <!-- Enable/Disable CWS -->
-		<flare-altitude>30</flare-altitude> <!-- Autoland Flare AGL -->
-		<land-enable>0</land-enable> <!-- Enable/Disable Autoland -->
+		<auto-bank-max-deg>30</auto-bank-max-deg> <!-- Maximum Auto Bank Limit -->
+		<land-enable>1</land-enable> <!-- Enable/Disable Autoland -->
 		<land-flap>0.7</land-flap> <!-- Minimum Flap used for Landing -->
 		<retard-ft>30</retard-ft> <!-- Enable Thrust Retard -->
 		<retard-enable>1</retard-enable> <!-- AGL to Thrust Retard -->
-		<togaspd>170</togaspd> <!-- V2 + 10kts -->
+		<togaspd>160</togaspd> <!-- V2 + 10kts -->
 		<lat-agl-ft>200</lat-agl-ft> <!-- Set to 999999 if you do not want T/O to change automatically to HDG, or LNAV -->
 		<reduc-agl-ft>1500</reduc-agl-ft> <!-- Set to 999999 if you do not want TOGA to change automatically to FLCH -->
+		<autoland-without-ap>0</autoland-without-ap> <!-- Engage LAND and FLARE Modes even if the AP is off -->
 	</settings>
 </it-autoflight>
 
