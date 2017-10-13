@@ -628,7 +628,7 @@
         <type>translate</type>
         <object-name>FD.roll</object-name>
         <property>/it-autoflight/fd/roll-bar</property>
-        <factor>0.0006</factor>
+        <factor>0.0002</factor>
         <axis>
             <x>0</x>
             <y>1</y>
@@ -640,7 +640,7 @@
         <type>translate</type>
         <object-name>FD.pitch</object-name>
         <property>/it-autoflight/fd/pitch-bar</property>
-        <factor>0.0001</factor>
+        <factor>0.0006</factor>
         <axis>
             <x>0</x>
             <y>0</y>

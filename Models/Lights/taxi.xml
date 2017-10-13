@@ -31,14 +31,14 @@
 			</and>
 		</condition>
 	</animation>
-	<animation>
+	<!--<animation>
 		<name>Cone on/off</name>
 		<type>select</type>
 		<object-name>Cone</object-name>
 		<condition>
 			<property>controls/lighting/cones</property>
 		</condition>
-	</animation>
+	</animation>-->
 
 	<!-- Rotate and scale the light -->
 	<animation>
