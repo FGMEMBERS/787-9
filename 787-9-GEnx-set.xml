@@ -500,42 +500,41 @@
 <it-autoflight>
 	<config>
 		<roll>
-			<kp-low>0.14</kp-low> <!-- Kp at low speed -->
-			<kp-high>0.07</kp-high> <!-- Kp at high speed -->
-			<ti>1.0</ti>
-			<td>0.0001</td>
+			<umin>-0.40</umin>
+			<umax>0.40</umax>
+			<kp>0.05</kp>
+			<kp-vloc>0.06</kp-vloc>
+			<ti>5.0</ti>
+			<td>0.00001</td>
 		</roll>
 		<pitch>
-			<kp-low>-0.17</kp-low> <!-- Kp at low speed -->
-			<kp-high>-0.07</kp-high> <!-- Kp at high speed -->
-			<ti>0.5</ti>
-			<td>0.001</td>
+			<umin>-0.50</umin>
+			<umax>0.50</umax>
+			<kp>-0.09</kp>
+			<ti>5.0</ti>
+			<td>0.0001</td>
 		</pitch>
 		<cmd>
-			<roll-kp>-1.3</roll-kp>
-			<vorloc>-2.8</vorloc>
-			<vs>0.0017</vs>
+			<roll-kp>-1.1</roll-kp>
+			<roll-scale>1.2</roll-scale>
+			<vorloc>-2.0</vorloc>
+			<vs>0.01</vs>
 		</cmd>
-		<autoland> 
-			<kp-pitch>0.0051</kp-pitch>
-			<kp-rudder>-0.05</kp-rudder>
+		<autoland>
+			<kp-pitch>0.03</kp-pitch>
+			<kp-rudder>-0.1</kp-rudder>
 		</autoland>
-		<rollout>
-			<defl-pitch>0.15</defl-pitch>
-			<kp-rudder>-0.02</kp-rudder>
-		</rollout>
 	</config>
 	<settings>
 		<auto-bank-max-deg>30</auto-bank-max-deg> <!-- Maximum Auto Bank Limit -->
-		<disable-final>0</disable-final> <!-- Disable the Final Controllers -->
 		<land-enable>1</land-enable> <!-- Enable/Disable Autoland -->
 		<land-flap>0.7</land-flap> <!-- Minimum Flap used for Landing -->
-		<retard-ft>50</retard-ft> <!-- Enable Thrust Retard -->
+		<retard-ft>30</retard-ft> <!-- Enable Thrust Retard -->
 		<retard-enable>1</retard-enable> <!-- AGL to Thrust Retard -->
-		<togaspd>155</togaspd> <!-- V2 + 10kts -->
-		<lat-agl-ft>50</lat-agl-ft> <!-- Set to 999999 if you do not want T/O to change automatically to LNAV (if armed) -->
+		<togaspd>160</togaspd> <!-- V2 + 10kts -->
+		<lat-agl-ft>200</lat-agl-ft> <!-- Set to 999999 if you do not want T/O to change automatically to HDG, or LNAV -->
 		<reduc-agl-ft>1500</reduc-agl-ft> <!-- Set to 999999 if you do not want TOGA to change automatically to FLCH -->
-		<autoland-without-ap>1</autoland-without-ap> <!-- Engage LAND and FLARE Modes even if the AP is off -->
+		<autoland-without-ap>0</autoland-without-ap> <!-- Engage LAND and FLARE Modes even if the AP is off -->
 	</settings>
 </it-autoflight>
 

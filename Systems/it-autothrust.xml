@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 
 <!-- IT-AUTOFLIGHT: AUTOTHRUST -->
-<!-- Copyright (c) 2017 Joshua Davidson (it0uchpods) -->
 
 <PropertyList>
 
@@ -28,6 +27,10 @@
 						<property>/it-autoflight/output/athr</property>
 						<value>1</value>
 					</equals>
+					<equals>
+						<property>/it-autoflight/output/retard</property>
+						<value>0</value>
+					</equals>
 				</and>
 			</condition>
 		</enable>
@@ -41,18 +44,19 @@
 			<property>/controls/flight/throttle-cmd</property>
 		</output>
 		<config>
-			<Kp>0.06</Kp>
-			<beta>1.0</beta>
-			<alpha>0.1</alpha>
-			<gamma>0.0</gamma>
-			<Ti>10.0</Ti>
-			<Td>0.00001</Td>   
+			<Kp>0.1</Kp>        
+			<beta>1.0</beta>    
+			<alpha>0.1</alpha>  
+			<gamma>0.0</gamma>  
+			<Ti>10.0</Ti>       
+			<Td>0.00001</Td>    
 			<u_min>0.0</u_min>  
-			<u_max>0.95</u_max>  
+			<u_max>0.94</u_max>  
 		</config>
 	</pid-controller>
 
 	<!-- Auto throttle (Mach Hold)-->
+
 	<pid-controller>
 		<name>MACH THR</name>
 		<debug>false</debug>
@@ -71,6 +75,10 @@
 						<property>/it-autoflight/output/athr</property>
 						<value>1</value>
 					</equals>
+					<equals>
+						<property>/it-autoflight/output/retard</property>
+						<value>0</value>
+					</equals>
 				</and>
 			</condition>
 		</enable>
@@ -86,30 +94,34 @@
 			<property>/controls/flight/throttle-cmd</property>
 		</output>
 		<config>
-			<Kp>0.06</Kp>
-			<beta>1.0</beta>
-			<alpha>0.1</alpha>
-			<gamma>0.0</gamma>
-			<Ti>10.0</Ti>
-			<Td>0.00001</Td>  
+			<Kp>0.1</Kp>        
+			<beta>1.0</beta>    
+			<alpha>0.1</alpha>  
+			<gamma>0.0</gamma>  
+			<Ti>10.0</Ti>       
+			<Td>0.00001</Td>    
 			<u_min>0.0</u_min>  
-			<u_max>0.95</u_max>  
+			<u_max>0.94</u_max>  
 		</config>
 	</pid-controller>
 
 	<!-- IDLE THR -->
-	<filter>
+	<pid-controller>
 		<name>IDLE</name>
 		<debug>false</debug>
-		<type>gain</type>
-		<gain>1</gain>
 		<enable>
 			<condition>
 				<and>
-					<equals>
-						<property>/it-autoflight/output/thr-mode</property>
-						<value>1</value>
-					</equals>
+					<or>
+						<equals>
+							<property>/it-autoflight/output/thr-mode</property>
+							<value>1</value>
+						</equals>
+						<equals>
+							<property>/it-autoflight/output/retard</property>
+							<value>1</value>
+						</equals>
+					</or>
 					<equals>
 						<property>/it-autoflight/output/athr</property>
 						<value>1</value>
@@ -118,28 +130,47 @@
 			</condition>
 		</enable>
 		<input>
-			<condition>
-				<equals>
-					<property>/it-autoflight/mode/thr</property>
-					<value>RETARD</value>
-				</equals>
-			</condition>
-			<value>0.0</value>
+		<value>900</value>
 		</input>
-		<input>
-			<value>0.01</value>
-		</input>
+		<reference>
+			<value>0</value>
+		</reference>
 		<output>
 			<property>/controls/flight/throttle-cmd</property>
 		</output>
-	</filter>
+		<config>
+			<Kp>0.1</Kp>        
+			<beta>1.0</beta>    
+			<alpha>0.1</alpha>  
+			<gamma>0.0</gamma>  
+			<Ti>10.0</Ti>       
+			<Td>0.00001</Td>    
+			<u_min>
+				<condition>
+					<equals>
+						<property>/it-autoflight/output/retard</property>
+						<value>0</value>
+					</equals>
+				</condition>
+				<value>0.08</value>
+			</u_min>  
+			<u_min>
+				<condition>
+					<equals>
+						<property>/it-autoflight/output/retard</property>
+						<value>1</value>
+					</equals>
+				</condition>
+				<value>0</value>
+			</u_min>
+			<u_max>0.2</u_max>  
+		</config>
+	</pid-controller>
 
 	<!-- CLB THR -->
-	<filter>
+	<pid-controller>
 		<name>CLB</name>
 		<debug>false</debug>
-		<type>gain</type>
-		<gain>1</gain>
 		<enable>
 			<condition>
 				<and>
@@ -151,16 +182,33 @@
 						<property>/it-autoflight/output/athr</property>
 						<value>1</value>
 					</equals>
+					<equals>
+						<property>/it-autoflight/output/retard</property>
+						<value>0</value>
+					</equals>
 				</and>
 			</condition>
 		</enable>
 		<input>
-			<value>0.95</value>
+			<value>0</value>
 		</input>
+		<reference>
+			<value>900</value>
+		</reference>
 		<output>
 			<property>/controls/flight/throttle-cmd</property>
 		</output>
-	</filter>
+		<config>
+			<Kp>0.1</Kp>        
+			<beta>1.0</beta>    
+			<alpha>0.1</alpha>  
+			<gamma>0.0</gamma>  
+			<Ti>10.0</Ti>       
+			<Td>0.00001</Td>    
+			<u_min>0.0</u_min>  
+			<u_max>0.95</u_max>  
+		</config>
+	</pid-controller>
   
 	<filter>
 		<name>IT-CONTROLLER: THRUST CMD</name>
