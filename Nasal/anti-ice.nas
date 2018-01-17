@@ -8,9 +8,9 @@ var icing = {
 setprop("/controls/ice/wing/temp", getprop("/environment/temperature-degc") );
 setprop("/controls/ice/eng1/temp", getprop("/environment/temperature-degc") );
 setprop("/controls/ice/eng2/temp", getprop("/environment/temperature-degc") );
-setprop("/controls/ice/wing/anti-ice",0);
-setprop("/controls/ice/eng1/anti-ice",0);
-setprop("/controls/ice/eng2/anti-ice",0);
+setprop("/controls/ice/wing/anti-ice",1);
+setprop("/controls/ice/eng1/anti-ice",1);
+setprop("/controls/ice/eng2/anti-ice",1);
 
 if (getprop("/environment/temperature-degc") <= 0) {
 setprop("/controls/ice/wing/anti-ice-setting", 2);
