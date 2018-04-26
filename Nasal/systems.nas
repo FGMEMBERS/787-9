@@ -116,7 +116,7 @@ var engineLoop = func(engine_no)
   {
   props.globals.getNode(engineOutTree ~ "failed").setBoolValue(1);
   }
- if (props.globals.getNode(engineCtlTree ~ "cutoff").getBoolValue() or props.globals.getNode(engineOutTree ~ "failed").getBoolValue() or props.globals.getNode(engineOutTree ~ "out-of-fuel").getBoolValue())
+ if (props.globals.getNode(engineCtlTree ~ "cutoff").getBoolValue() or props.globals.getNode(engineOutTree ~ "failed").getBoolValue())
   {
   if (getprop(engineOutTree ~ "rpm") > 0)
    {

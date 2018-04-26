@@ -336,8 +336,7 @@
 
 </propulsion>
 
-	<!-- system file="pushback"/>
-    <system file="Defines"/ -->
+	<system file="pushback"/>
 
 <flight_control name="FCS: 787-8">
 
