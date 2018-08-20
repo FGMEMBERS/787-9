@@ -7,7 +7,7 @@
   <model>        
     <livery>
 		<name type="string">Delta Airlines</name>
-      <texture>Liveries/DAL.png</texture>
+      <texture>Liveries/QAN.png</texture>
     </livery>
     <lights>
       <texture>Liveries/BOE2-Lights.png</texture>
