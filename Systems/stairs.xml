@@ -48,7 +48,7 @@
 				    	
 				    		var aircraft_dir = getprop("/sim/aircraft-dir");
 				    		
-				    		setprop("/services/stairs/paint", aircraft_dir~ "/Models/Services/Stairs/" ~ getprop("/services/stairs/paint-end"));
+				    		setprop("/services/stairs/paint", aircraft_dir~ "/Services/Stairs/" ~ getprop("/services/stairs/paint-end"));
 				    	
 				    	</script>
 				    </binding>
