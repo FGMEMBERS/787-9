@@ -24,6 +24,25 @@
 		<live>true</live>
 	</checkbox>
 	
+	
+	<checkbox>	
+		<label>Enable L2 stairway</label>
+		<property>services/stairs/l2</property>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<live>true</live>
+	</checkbox>
+	
+	<checkbox>	
+		<label>Enable L4 stairway</label>
+		<property>services/stairs/l4</property>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<live>true</live>
+	</checkbox>
+	
 	<hrule />
 		
 	<text>
