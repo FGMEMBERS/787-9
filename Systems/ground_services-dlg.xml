@@ -11,8 +11,12 @@
 
 	<hrule />
 		
-	<checkbox>
+	<text>
 		<label>Stairs</label>
+	</text>
+	
+	<checkbox>	
+		<label>Enable L1 stairway</label>
 		<property>services/stairs/l1</property>
 		<binding>
 			<command>dialog-apply</command>
