@@ -11,6 +11,17 @@
 
 	<hrule />
 		
+	<checkbox>
+		<label>Stairs</label>
+		<property>services/stairs/l1</property>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<live>true</live>
+	</checkbox>
+	
+	<hrule />
+		
 	<text>
 		<label>De-icing Truck</label>
 	</text>
