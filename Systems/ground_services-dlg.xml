@@ -12,6 +12,40 @@
 	<hrule />
 		
 	<text>
+		<label>Stairs</label>
+	</text>
+	
+	<checkbox>	
+		<label>Enable L1 stairway</label>
+		<property>services/stairs/l1</property>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<live>true</live>
+	</checkbox>
+	
+	
+	<checkbox>	
+		<label>Enable L2 stairway</label>
+		<property>services/stairs/l2</property>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<live>true</live>
+	</checkbox>
+	
+	<checkbox>	
+		<label>Enable L4 stairway</label>
+		<property>services/stairs/l4</property>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<live>true</live>
+	</checkbox>
+	
+	<hrule />
+		
+	<text>
 		<label>De-icing Truck</label>
 	</text>
 
