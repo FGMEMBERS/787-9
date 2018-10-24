@@ -628,7 +628,7 @@
         <type>translate</type>
         <object-name>FD.roll</object-name>
         <property>/it-autoflight/fd/roll-bar</property>
-        <factor>0.0002</factor>
+        <factor>0.0003</factor>
         <axis>
             <x>0</x>
             <y>1</y>
