@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+
+<sim>    
+  <model>        
+    <livery>
+		<name type="string">Worldwide airlines</name>
+      <texture>Liveries/Worldwide airlines Boeing 789 new livery.png</texture>
+    </livery>
+    <lights>
+      <texture>Liveries/Worldwide airlines Boeing 789 new livery.png</texture>
+    </lights>
+  </model>
+</sim>
+
+</PropertyList>

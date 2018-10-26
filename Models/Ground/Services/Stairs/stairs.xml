@@ -3,7 +3,7 @@
 <PropertyList>
 
 	<name>Mobile Stairs</name>
-	<path>stairs.ac</path>
+	<path>aircraft/787-9/models/ground/services/stairs/stairs.ac</path>
 
 <!-- LIVERY SELECT -->
 	<!-- Animation -->
