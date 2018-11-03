@@ -774,7 +774,7 @@
 				<input />
 				<serviceable type="bool">true</serviceable>
 				<model>787-900</model>
-				<engines>trent_1000</engines>
+				<engines>GEnx-1B76</engines>
 			</ident>
 		</cdu>
 		<fmc>
