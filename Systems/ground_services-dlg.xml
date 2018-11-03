@@ -10,7 +10,9 @@
 	</text>
 
 	<hrule />
-		
+	
+	<path>aircraft/787-9/Models/Ground/Services/Stairs/stairs.xml</path>
+	
 	<text>
 		<label>Stairs</label>
 	</text>
