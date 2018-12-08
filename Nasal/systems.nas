@@ -309,7 +309,6 @@ setlistener("controls/gear/gear-down", func
  
  setlistener("/sim/signals/fdm-initialized", func {
     itaf.ap_init();
-    var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/787-9/Systems/autopilot-dlg.xml");
 });
 
 var aglgears = func {

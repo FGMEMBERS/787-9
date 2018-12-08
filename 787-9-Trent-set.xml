@@ -509,11 +509,9 @@
 				<td>0.001</td>
 			</pitch>
 			<cmd>
-				<roll-kp>-1.6</roll-kp>
+				<hdg>-1.6</hdg>
 				<vorloc>-2.2</vorloc>
 				<alt-gain>-5</alt-gain>
-				<vs-low>0.0029</vs-low> <!-- Kp at low speed -->
-				<vs-high>0.0010</vs-high> <!-- Kp at high speed -->
 			</cmd>
 			<autoland> 
 				<pitch-kp>0.0051</pitch-kp>
@@ -826,17 +824,6 @@
 
 	<input>
 		<keyboard>
- 			<key n="267">
-			<name>F11</name>
-				<desc>Pop up autopilot dialog</desc>
-				<binding>
-							<command>nasal</command>
-							<script>
-							 var ap_dialog = gui.Dialog.new("sim/gui/dialogs/ap_dialog/dialog", "Aircraft/787-9/Systems/autopilot-dlg.xml");
-							 ap_dialog.open();
-							</script>
-				</binding>
-			</key>
 			<key n="127">
 				<name>Delete</name>
 				<desc>Toggle thrust reversers</desc>
