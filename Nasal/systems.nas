@@ -306,11 +306,6 @@ setlistener("controls/gear/gear-down", func
   }
  });
 
- 
- setlistener("/sim/signals/fdm-initialized", func {
-    itaf.ap_init();
-});
-
 var aglgears = func {
     var agl = getprop("/position/altitude-agl-ft") or 0;
     var aglft = agl - 13.7 ;  # is the position from the Aircraft above ground
