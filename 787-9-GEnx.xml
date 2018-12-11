@@ -588,18 +588,16 @@
 <!-- Lift due to ground effects to make the take off faster -->
         <function name="aero/function/kCLge">
             <description>Change_in_lift_due_to_ground_effect</description>
-            <product>
-                  <table>
-                      <independentVar>aero/h_b-mac-ft</independentVar>
-                      <tableData>
-                          0.0000	1.3000	
-                          0.1000	1.2500	
-                          0.1500	1.1000	
-                          0.2000	1.1200	
-                          1.1000	1.1000	
-                      </tableData>
-                  </table>
-            </product>
+            <table>
+			  <independentVar>aero/h_b-mac-ft</independentVar>
+			  <tableData>
+				  0.0000	1.3000	
+				  0.1000	1.2500	
+				  0.1500	1.1000	
+				  0.2000	1.1200	
+				  1.1000	1.1000	
+			  </tableData>
+		  </table>
         </function>
 
   <axis name="LIFT">
