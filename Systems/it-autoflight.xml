@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <!-- IT-AUTOFLIGHT -->
-<!-- Copyright (c) 2019 Joshua Davidson (it0uchpods) -->
+<!-- Copyright (c) 2019 Joshua Davidson (Octal450) -->
 
 <PropertyList>
 	
@@ -172,7 +172,7 @@
 				</equals>
 			</condition>
 		</enable>
-        <input>
+		<input>
 			<expression>
 				<floor>
 					<sum>
@@ -197,7 +197,7 @@
 				</equals>
 			</condition>
 		</enable>
-        <input>
+		<input>
 			<expression>
 				<div>
 					<floor>
@@ -222,7 +222,7 @@
 		<gain>1.0</gain>
 		<input>
 			<condition>
-				<property>/instrumentation/efis/mfd/true-north</property>
+				<property>/it-autoflight/input/true-course</property>
 			</condition>
 			<property>/orientation/heading-deg</property>
 		</input>
@@ -386,6 +386,16 @@
 		<max-rate-of-change>
 			<condition>
 				<and>
+					<or>
+						<equals>
+							<property>/it-autoflight/output/ap1</property>
+							<value>1</value>
+						</equals>
+						<equals>
+							<property>/it-autoflight/output/ap2</property>
+							<value>1</value>
+						</equals>
+					</or>
 					<equals>
 						<property>/it-autoflight/output/vert</property>
 						<value>1</value>
@@ -603,10 +613,10 @@
 		<gain>1.0</gain>
 		<input>
 			<condition>
-				<greater-than>
+				<greater-than-equals>
 					<property>/it-autoflight/internal/heading-predicted-cmd</property>
-					<value>360</value>
-				</greater-than>
+					<value>360.5</value>
+				</greater-than-equals>
 			</condition>
 			<expression>
 				<dif>
@@ -619,7 +629,7 @@
 			<condition>
 				<less-than>
 					<property>/it-autoflight/internal/heading-predicted-cmd</property>
-					<value>1</value>
+					<value>0.5</value>
 				</less-than>
 			</condition>
 			<expression>
@@ -941,7 +951,7 @@
 	<filter>
 		<name>IT-CONTROLLER: AILERON ROLLOUT</name>
 		<type>gain</type>
-		<gain>/it-autoflight/config/rollout/hdg-kp</gain>
+		<gain>/it-autoflight/config/rollout/roll-kp</gain>
 		<enable>
 			<condition>
 				<or>
@@ -956,7 +966,18 @@
 				</or>
 			</condition>
 		</enable>
-		<input>/orientation/roll-deg</input>
+		<input>
+			<expression>
+				<table>
+					<property>/orientation/roll-deg</property>
+					<entry><ind>-30</ind><dep>-30</dep></entry>
+					<entry><ind> -1</ind><dep>  0</dep></entry>
+					<entry><ind>  0</ind><dep>  0</dep></entry>
+					<entry><ind>  1</ind><dep>  0</dep></entry>
+					<entry><ind> 30</ind><dep> 30</dep></entry>
+				</table>
+			</expression>
+		</input>
 		<reference>0</reference>
 		<output>/it-autoflight/internal/aileron-rollout</output>
 	</filter>
@@ -1335,7 +1356,7 @@
 			<expression>
 				<table>
 					<property>/position/gear-agl-ft</property> 
-					<entry><ind>100</ind><dep>-600</dep></entry>
+					<entry><ind>100</ind><dep>-650</dep></entry>
 					<entry><ind> 50</ind><dep>-500</dep></entry>
 					<entry><ind> 40</ind><dep>-400</dep></entry>
 					<entry><ind> 30</ind><dep>-300</dep></entry>
@@ -2006,7 +2027,7 @@
 		</input>
 		<input>0</input>
 		<output>/controls/flight/rudder</output>
-		<max-rate-of-change>0.6</max-rate-of-change>
+		<max-rate-of-change>1.2</max-rate-of-change>
 	</filter>
 	
 	<!-- Flight Director -->
