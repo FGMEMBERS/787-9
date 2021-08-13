@@ -1,11 +1,5 @@
 This is the new 'official' home of the 787-9 for Flightgear.
 
-After gitorious closed down and former maintainer Omega95 retired, islandmonkey created a repo for the 787-8. He said, 'We'll try to gather open merge requests and improvements from the old gitorious repo here.'
-I, Jonathan Redpath, aka Legoboyvdlp, with others edited the 787-8 into a 787-9, in time for the 2016.1 release.
 Install
 -------
 Rename Aircraft folder to '787-9'
-
-WIKI ARTICLE : http://wiki.flightgear.org/Boeing_787-8_Dreamliner
-
-Size: 72.8 MB
